@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="soda_image_description">Image of a Soda</string>
+    <string name="create">Create</string>
+    <string name="view">View</string>
 </resources>
