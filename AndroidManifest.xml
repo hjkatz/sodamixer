@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.hjkatz.sodamixer">
-    <application android:icon="@drawable/icon">
-        <activity android:name=".activity.LaunchActivity">
+          package="com.hjkatz.sodamixer"
+          android:versionName="1">
+
+    <uses-sdk android:minSdkVersion="15"
+              android:targetSdkVersion="16"/>
+
+    <application android:icon="@drawable/sodapopbottle"
+                 android:label="@string/app_title">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>

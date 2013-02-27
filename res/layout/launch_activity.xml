@@ -5,37 +5,4 @@
               android:layout_width="fill_parent"
               android:layout_height="fill_parent">
 
-    <ImageView
-            android:layout_width="fill_parent"
-            android:layout_height="400dp"
-            android:id="@+id/sodaImage"
-            android:layout_gravity="center"
-            android:src="@drawable/sodapopbottle"
-            android:contentDescription="@string/soda_image_description"/>
-    <ListView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/listView"/>
-    <LinearLayout
-            android:orientation="horizontal"
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent">
-        <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/view"
-                android:id="@+id/create"
-                android:layout_weight="1"
-                android:layout_gravity="center_horizontal|bottom"
-                android:onClick="createButtonClicked"/>
-        <Button
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:text="@string/create"
-                android:id="@+id/view"
-                android:layout_weight="1"
-                android:layout_gravity="center_horizontal|bottom"
-                android:onClick="viewButtonClicked"/>
-    </LinearLayout>
-
 </LinearLayout>
