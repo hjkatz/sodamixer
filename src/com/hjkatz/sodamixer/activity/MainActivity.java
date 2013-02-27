@@ -5,7 +5,6 @@ import android.app.Activity;
 import android.app.Fragment;
 import android.app.FragmentTransaction;
 import android.os.Bundle;
-import android.widget.Toast;
 import com.hjkatz.sodamixer.R;
 import fragment.CreateFragment;
 import fragment.MixesFragment;
@@ -94,7 +93,6 @@ public class MainActivity extends Activity
 
         public void onTabReselected( ActionBar.Tab tab, FragmentTransaction ft )
         {
-            Toast.makeText( mActivity, "Reselected!", Toast.LENGTH_SHORT ).show();
         }
     }
 }
