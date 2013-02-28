@@ -24,26 +24,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7b2ee604-e38a-4b22-93b7-d8374533f77e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixSodaTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixStyleTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaFlavorTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaTable.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/hjkatz/sodamixer/Manifest.java" afterPath="$PROJECT_DIR$/gen/com/hjkatz/sodamixer/Manifest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/MixesFragment.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/MixesFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/hjkatz/sodamixer/R.java" afterPath="$PROJECT_DIR$/gen/com/hjkatz/sodamixer/R.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/launch_activity.xml" afterPath="$PROJECT_DIR$/res/layout/launch_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/mixes_fragment.xml" afterPath="$PROJECT_DIR$/res/layout/mixes_fragment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/create_fragment.xml" afterPath="$PROJECT_DIR$/res/layout/create_fragment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="F:\Projects\sodamixer\libs\android-support-v13.jar" afterPath="$PROJECT_DIR$/libs/android-support-v4.jar" />
-      <change type="MOVED" beforePath="F:\Projects\sodamixer\src\fragment\CreateFragment.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java" />
-      <change type="MOVED" beforePath="F:\Projects\sodamixer\src\fragment\MixesFragment.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/MixesFragment.java" />
     </list>
     <ignored path="sodamixer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362008176907" ignored="false" />
+    <file path="/Dummy.txt" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362090352043" ignored="false" />
     <file path="/layout_LaunchActivity.xml" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1357775453077" ignored="false" />
     <file path="/LaunchActivity.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1357868071265" ignored="false" />
     <file path="/MainActivity.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362016152919" ignored="false" />
@@ -52,13 +52,18 @@
     <file path="/launch_activity.xml" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362008614993" ignored="false" />
     <file path="$APPLICATION_HOME_DIR$/plugins/android/lib/android.jar!/org/jetbrains/android/android.xsd" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1361923982910" ignored="false" />
     <file path="/CreateFragment.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1361926751098" ignored="false" />
-    <file path="/MixesFragment.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1361925414150" ignored="false" />
+    <file path="/MixesFragment.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362093550270" ignored="false" />
     <file path="/mixes_fragment.xml" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362011220668" ignored="false" />
-    <file path="/create_fragment.xml" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1361926404545" ignored="false" />
-    <file path="/strings.xml" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1361926499656" ignored="false" />
+    <file path="/create_fragment.xml" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362022366609" ignored="false" />
+    <file path="/strings.xml" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362022136268" ignored="false" />
     <file path="F:/SDK/adt-bundle-windows-x86_64 (1)/adt-bundle-windows-x86_64/sdk/platforms/android-17/data/res/values-am-rET/donottranslate-maps.xml" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362006006106" ignored="false" />
-    <file path="/fragment.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362007939434" ignored="false" />
+    <file path="/fragment.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362093152688" ignored="false" />
     <file path="$PROJECT_DIR$/ActionBarSherlock/res/layout/main.xml" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362015643755" ignored="false" />
+    <file path="/SQLiteHelper.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362093344404" ignored="false" />
+    <file path="/MixTable.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362091960904" ignored="false" />
+    <file path="/SodaTable.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362092818793" ignored="false" />
+    <file path="/MixSodaTable.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362093254673" ignored="false" />
+    <file path="/MixStyleTable.java" changelist="7b2ee604-e38a-4b22-93b7-d8374533f77e" time="1362093237347" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,13 +122,84 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="create_fragment.xml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/res/layout/create_fragment.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
+      <file leaf-file-name="SQLiteHelper.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="48" column="8" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.8797251">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MixesFragment.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/MixesFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MixTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="18" column="44" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SodaTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="63" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MixSodaTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixSodaTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="16" column="63" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StyleTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="10" column="45" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MixStyleTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixStyleTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="63" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SodaBaseTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="29" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SodaFlavorTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaFlavorTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="19" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -145,21 +221,32 @@
       <MyDateState />
     </option>
   </component>
+  <component name="GradleLocalSettings">
+    <option name="expandStates">
+      <map>
+        <entry key="sodamixer" value="true" />
+      </map>
+    </option>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/res/layout/layout_LaunchActivity.xml" />
-        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/LaunchActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/LaunchActivity.java" />
-        <option value="$PROJECT_DIR$/res/layout/create_fragment.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
-        <option value="$PROJECT_DIR$/res/layout/launch_activity.xml" />
-        <option value="$PROJECT_DIR$/src/fragment/MixesFragment.java" />
         <option value="$PROJECT_DIR$/src/fragment/CreateFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/mixes_fragment.xml" />
         <option value="$PROJECT_DIR$/ActionBarSherlock/local.properties" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout/create_fragment.xml" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixTable.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseTable.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaFlavorTable.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaTable.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixStyleTable.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixSodaTable.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/MixesFragment.java" />
       </list>
     </option>
   </component>
@@ -235,7 +322,51 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -274,6 +405,10 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -290,6 +425,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -321,6 +470,9 @@
     <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hjkatz.sodamixer.database" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="F:\Documents and Settings\sodamixer\res\layout" />
     </key>
@@ -524,7 +676,11 @@
       <created>1362007417809</created>
       <updated>1362007417809</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Added ActionBarsherlock and Support for API 7 -- 16">
+      <created>1362016845442</created>
+      <updated>1362016845442</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -532,10 +688,9 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32924226" sideWeight="0.3592881" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.67074525" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39933258" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -544,20 +699,21 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998884" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6407119" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852387" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.63959956" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14514408" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14461046" sideWeight="0.36040044" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -599,7 +755,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Tabs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added ActionBarsherlock and Support for API 7 -- 16" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -615,6 +771,7 @@
     <MESSAGE value="initial setup" />
     <MESSAGE value="intial hello world" />
     <MESSAGE value="Added Tabs" />
+    <MESSAGE value="Added ActionBarsherlock and Support for API 7 -- 16" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -624,99 +781,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="5" selection-start="460" selection-end="460" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/SDK/adt-bundle-windows-x86_64 (1)/adt-bundle-windows-x86_64/sdk/sources/android-16/android/app/FragmentTransaction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="40" selection-start="1524" selection-end="1524" vertical-scroll-proportion="0.33257142" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="39" selection-start="237" selection-end="237" vertical-scroll-proportion="0.09142857" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gen/com/hjkatz/sodamixer/Manifest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="19" selection-start="146" selection-end="146" vertical-scroll-proportion="0.08304498">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sodamixer.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/launch_activity.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="39" selection-start="336" selection-end="336" vertical-scroll-proportion="-4.48">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/MixesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="19" selection-end="19" vertical-scroll-proportion="0.036655214">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="25" selection-start="44" selection-end="44" vertical-scroll-proportion="0.036655214">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://F:/SDK/adt-bundle-windows-x86_64 (1)/adt-bundle-windows-x86_64/sdk/sources/android-15/android/app/Activity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4657" column="0" selection-start="192272" selection-end="192272" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/mixes_fragment.xml">
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="38" selection-start="147" selection-end="147" vertical-scroll-proportion="-1.92">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/project.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="74" selection-end="74" vertical-scroll-proportion="0.036655214">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/library/AndroidManifest.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/library/src/com/actionbarsherlock/app/SherlockFragmentActivity.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="21" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
+        <state line="41" column="21" selection-start="1598" selection-end="1598" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
@@ -735,12 +802,98 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="37" selection-start="379" selection-end="379" vertical-scroll-proportion="0.24956672">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/create_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="77" column="0" selection-start="2929" selection-end="2929" vertical-scroll-proportion="0.43294117">
+          <folding />
+        </state>
+      </provider>
       <provider editor-type-id="android-designer">
         <state />
       </provider>
+    </entry>
+    <entry file="file://F:/Downloads/SQLiteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="679" column="143" selection-start="36430" selection-end="36430" vertical-scroll-proportion="0.50793654">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/Downloads/BeamTypeTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="44" selection-start="669" selection-end="669" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="29" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="63" selection-start="463" selection-end="463" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaFlavorTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="19" selection-start="407" selection-end="407" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="45" selection-start="306" selection-end="306" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixStyleTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="63" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixSodaTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="63" selection-start="589" selection-end="589" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/MixesFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="590" selection-end="590" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="8" selection-start="1340" selection-end="1340" vertical-scroll-proportion="0.8797251">
           <folding />
         </state>
       </provider>

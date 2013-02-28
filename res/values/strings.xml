@@ -3,5 +3,16 @@
     <string name="soda_image_description">Image of a Soda</string>
     <string name="create">Create</string>
     <string name="view">View</string>
+    <string name="spinner_prompt">Choose One</string>
     <string name="app_title">Soda Mixer</string>
+
+    <string-array name="flavors_array">
+        <item>Dark (Coke Like)</item>
+        <item>Light (Sprite Like)</item>
+        <item>Energy (Powerade)</item>
+        <item>Sweet</item>
+        <item>Bitter</item>
+        <item>Sour</item>
+        <item>Fruity</item>
+    </string-array>
 </resources>
