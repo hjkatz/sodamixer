@@ -3,11 +3,12 @@
           package="com.hjkatz.sodamixer"
           android:versionName="1">
 
-    <uses-sdk android:minSdkVersion="15"
-              android:targetSdkVersion="16"/>
+    <uses-sdk android:minSdkVersion="16"
+              android:targetSdkVersion="7"/>
 
     <application android:icon="@drawable/sodapopbottle"
-                 android:label="@string/app_title">
+                 android:label="@string/app_title"
+                 android:theme="@style/Theme.Sherlock">
         <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>

@@ -4,6 +4,8 @@
     <option name="DEFAULT_COMPILER" value="Javac" />
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/ActionBarSherlock/gen" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/library/gen" includeSubdirectories="true" />
     </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>
