@@ -26,18 +26,15 @@ public class MainActivity extends SherlockFragmentActivity
         fragments.add( new CreateFragment() );
     }
 
-    private ViewPager viewPager;
-    private MainPagerAdapter fragmentPagerAdapter;
-
     public void onCreate( Bundle savedInstanceState )
     {
         super.onCreate( savedInstanceState );
         this.setContentView( R.layout.launch_activity );
 
-        fragmentPagerAdapter = new MainPagerAdapter( getSupportFragmentManager() );
+        MainPagerAdapter fragmentPagerAdapter = new MainPagerAdapter( getSupportFragmentManager() );
         fragmentPagerAdapter.setFragments( fragments );
 
-        viewPager = (ViewPager) findViewById( R.id.viewPager );
+        ViewPager viewPager = (ViewPager) findViewById( R.id.viewPager );
         viewPager.setAdapter( fragmentPagerAdapter );
         viewPager.setOnPageChangeListener( new ViewPager.SimpleOnPageChangeListener()
         {

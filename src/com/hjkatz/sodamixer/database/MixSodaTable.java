@@ -10,12 +10,13 @@ public class MixSodaTable
     public static final String PK = "mix_soda";
     public static final String MIX = "mix";
     public static final String SODA = "soda";
-    private static final String create_table = "CREATE TABLE" +
+    private static final String create_table = "CREATE TABLE " + TABLE +
             " ( " +
-            MIX + " INTEGER NOT NULL " +
-            SODA + " INTEGER NOT NULL " +
-            " FOREIGN KEY ( " + MIX + " ) REFERENCES " + MixTable.TABLE + " ( " + MixTable.PK + " ) " +
-            " FOREIGN KEY ( " + SODA + " ) REFERENCES " + SodaTable.TABLE + " ( " + SodaTable.PK + " ) " +
+            PK + " INTEGER , " +
+            MIX + " INTEGER NOT NULL , " +
+            SODA + " INTEGER NOT NULL , " +
+            " FOREIGN KEY ( " + MIX + " ) REFERENCES " + MixTable.TABLE + " ( " + MixTable.PK + " ) , " +
+            " FOREIGN KEY ( " + SODA + " ) REFERENCES " + SodaTable.TABLE + " ( " + SodaTable.PK + " ) , " +
             " PRIMARY KEY ( " + PK + " ) " +
             " ) ";
 

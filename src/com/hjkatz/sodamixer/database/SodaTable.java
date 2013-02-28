@@ -11,13 +11,14 @@ public class SodaTable
     public static final String NAME = "name";
     public static final String BASE = "base";
     public static final String FLAVOR = "flavor";
-    private static final String create_table = "CREATE TABLE" +
+    private static final String create_table = "CREATE TABLE " + TABLE +
             " ( " +
-            NAME + " TEXT NOT NULL " +
-            BASE + " INTEGER NOT NULL " +
-            FLAVOR + " INTEGER NOT NULL " +
-            " PRIMARY KEY ( " + PK + " ) " +
-            " FOREIGN KEY ( " + BASE + " ) REFERENCES " + SodaBaseTable.TABLE + " ( " + SodaBaseTable.PK + " ) " +
+            PK + " INTEGER , " +
+            NAME + " TEXT NOT NULL , " +
+            BASE + " INTEGER NOT NULL , " +
+            FLAVOR + " INTEGER NOT NULL , " +
+            " PRIMARY KEY ( " + PK + " ) , " +
+            " FOREIGN KEY ( " + BASE + " ) REFERENCES " + SodaBaseTable.TABLE + " ( " + SodaBaseTable.PK + " ) , " +
             " FOREIGN KEY ( " + FLAVOR + " ) REFERENCES " + SodaFlavorTable.TABLE + " ( " + SodaFlavorTable.PK + " ) " +
             " ) ";
 

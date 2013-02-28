@@ -6,16 +6,17 @@ import android.database.sqlite.SQLiteDatabase;
 public class MixStyleTable
 {
 
-    public static final String TABLE = "tb_mix_soda";
-    public static final String PK = "mix_soda";
+    public static final String TABLE = "tb_mix_style";
+    public static final String PK = "mix_style";
     public static final String MIX = "mix";
     public static final String STYLE = "style";
-    private static final String create_table = "CREATE TABLE" +
+    private static final String create_table = "CREATE TABLE " + TABLE +
             " ( " +
-            MIX + " INTEGER NOT NULL " +
-            STYLE + " INTEGER NOT NULL " +
-            " FOREIGN KEY ( " + MIX + " ) REFERENCES " + MixTable.TABLE + " ( " + MixTable.PK + " ) " +
-            " FOREIGN KEY ( " + STYLE + " ) REFERENCES " + StyleTable.TABLE + " ( " + StyleTable.PK + " ) " +
+            PK + " INTEGER , " +
+            MIX + " INTEGER NOT NULL , " +
+            STYLE + " INTEGER NOT NULL , " +
+            " FOREIGN KEY ( " + MIX + " ) REFERENCES " + MixTable.TABLE + " ( " + MixTable.PK + " ) , " +
+            " FOREIGN KEY ( " + STYLE + " ) REFERENCES " + StyleTable.TABLE + " ( " + StyleTable.PK + " ) , " +
             " PRIMARY KEY ( " + PK + " ) " +
             " ) ";
 

@@ -9,9 +9,10 @@ public class StyleTable
     public static final String TABLE = "tb_style";
     public static final String PK = "style";
     public static final String NAME = "name";
-    private static final String create_table = "CREATE TABLE" +
+    private static final String create_table = "CREATE TABLE " + TABLE +
             " ( " +
-            NAME + " TEXT NOT NULL " +
+            PK + " INTEGER , " +
+            NAME + " TEXT NOT NULL , " +
             " PRIMARY KEY ( " + PK + " ) " +
             " ) ";
 

@@ -1,5 +1,6 @@
 package com.hjkatz.sodamixer.fragment;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
 import android.view.LayoutInflater;
@@ -17,6 +18,7 @@ public class MixesFragment extends ListFragment
     {
 
         SQLiteHelper dbHelper = SQLiteHelper.getDbHelper( this.getActivity() );
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
 
         return inflater.inflate( R.layout.mixes_fragment, container, false );
     }

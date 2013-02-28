@@ -10,7 +10,7 @@ public class SQLiteHelper extends SQLiteOpenHelper
 {
 
     private static final String DATABASE_NAME = "sodamixer";
-    private static final int DATABASE_VERSION = 1;
+    private static final int DATABASE_VERSION = 2;
     private static SQLiteHelper dbHelper;
 
     private SQLiteHelper( Context context )

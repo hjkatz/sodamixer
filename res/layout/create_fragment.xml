@@ -18,14 +18,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:textAppearance="@android:style/TextAppearance.Medium"
-                android:text="Name:"
+                android:text="@string/name"
                 />
         <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:textAppearance="@android:style/TextAppearance.Medium"
-                android:hint="Crazy Soda Name!"
+                android:hint="@string/example"
                 android:singleLine="true"
                 />
     </LinearLayout>
@@ -40,7 +40,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:textAppearance="@android:style/TextAppearance.Medium"
-                android:text="Flavor:"
+                android:text="@string/style"
                 />
         <Spinner
                 android:layout_width="0dp"
@@ -63,14 +63,14 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="2"
                 android:textAppearance="@android:style/TextAppearance.Medium"
-                android:text="Description:"
+                android:text="@string/description"
                 />
         <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="3"
                 android:textAppearance="@android:style/TextAppearance.Medium"
-                android:hint="Crazy Soda Name!"
+                android:hint="@string/example"
                 android:maxLines="5"
                 android:minLines="3"
                 />

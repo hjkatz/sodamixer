@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="soda_image_description">Image of a Soda</string>
-    <string name="create">Create</string>
-    <string name="view">View</string>
     <string name="spinner_prompt">Choose One</string>
     <string name="app_title">Soda Mixer</string>
+    <string name="name">Name:</string>
+    <string name="example">Example</string>
+    <string name="style">Style:</string>
+    <string name="description">Description:</string>
 
     <string-array name="flavors_array">
         <item>Dark (Coke Like)</item>

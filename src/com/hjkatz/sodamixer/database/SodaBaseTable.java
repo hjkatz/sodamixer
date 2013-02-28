@@ -9,9 +9,10 @@ public class SodaBaseTable
     public static final String TABLE = "tb_soda_base";
     public static final String PK = "soda_base";
     public static final String NAME = "name";
-    private static final String create_table = "CREATE TABLE" +
+    private static final String create_table = "CREATE TABLE " + TABLE +
             " ( " +
-            NAME + " TEXT NOT NULL " +
+            PK + " INTEGER , " +
+            NAME + " TEXT NOT NULL , " +
             " PRIMARY KEY ( " + PK + " ) " +
             " ) ";
 
