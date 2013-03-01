@@ -6,6 +6,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
+import android.view.View;
 import com.actionbarsherlock.app.ActionBar;
 import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.hjkatz.sodamixer.R;
@@ -18,12 +19,14 @@ public class MainActivity extends SherlockFragmentActivity
 {
 
     private static ArrayList<Fragment> fragments = new ArrayList<>();
+    private static MixesFragment mixesFragment = new MixesFragment();
+    private static CreateFragment createFragment = new CreateFragment();
 
     static
     {
         //Maintain Same Order as Adding Tabs!!!!!!!!!
-        fragments.add( new MixesFragment() );
-        fragments.add( new CreateFragment() );
+        fragments.add( mixesFragment );
+        fragments.add( createFragment );
     }
 
     public void onCreate( Bundle savedInstanceState )
@@ -119,5 +122,20 @@ public class MainActivity extends SherlockFragmentActivity
         {
             return mFragments.size();
         }
+    }
+
+    public void addSodaRow( View v )
+    {
+        createFragment.addSodaRow( v );
+    }
+
+    public void deleteSodaRow( View v )
+    {
+        createFragment.deleteSodaRow( v );
+    }
+
+    public void addSodaDialog( View v )
+    {
+        createFragment.addSodaDialog( v );
     }
 }
