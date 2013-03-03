@@ -1,16 +1,19 @@
 package com.hjkatz.sodamixer.helper;
 
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
+import android.database.*;
+import android.database.sqlite.*;
 import com.hjkatz.sodamixer.database.*;
+import com.hjkatz.sodamixer.model.*;
+
+import java.util.*;
 
 /** Created By: Harrison Katz on Date: 2/28/13 */
 public class SQLiteHelper extends SQLiteOpenHelper
 {
 
     private static final String DATABASE_NAME = "sodamixer";
-    private static final int DATABASE_VERSION = 2;
+    private static final int DATABASE_VERSION = 4;
     private static SQLiteHelper dbHelper;
 
     private SQLiteHelper( Context context )
@@ -63,4 +66,66 @@ public class SQLiteHelper extends SQLiteOpenHelper
         db.enableWriteAheadLogging();
         db.execSQL( "PRAGMA foreign_keys=ON;" );
     }
+
+    // TB_SODA_BASE FUNCTIONS
+
+    public ArrayList<SodaBase> getAllSodaBases()
+    {
+        ArrayList<SodaBase> bases = new ArrayList<SodaBase>();
+
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        try
+        {
+            Cursor cursor = db.rawQuery( "SELECT * FROM " + SodaBaseTable.TABLE + " ORDER BY " + SodaBaseTable.NAME + " ASC ", null );
+
+            if ( cursor.moveToFirst() )
+            {
+                do
+                {
+                    SodaBase sodaBase = new SodaBase();
+                    sodaBase.setName( cursor.getString( cursor.getColumnIndex( SodaBaseTable.NAME ) ) );
+                    bases.add( sodaBase );
+                } while ( cursor.moveToNext() );
+            }
+        } catch ( SQLiteException e )
+        {
+            e.printStackTrace();
+        }
+
+        return bases;
+    }
+
+    // END TB_SODA_BASE FUNCTIONS
+
+    // TB_SODA_FLAVOR FUNCTIONS
+
+    public ArrayList<SodaFlavor> getAllSodaFlavors()
+    {
+        ArrayList<SodaFlavor> flavors = new ArrayList<SodaFlavor>();
+
+        SQLiteDatabase db = dbHelper.getWritableDatabase();
+
+        try
+        {
+            Cursor cursor = db.rawQuery( "SELECT * FROM " + SodaFlavorTable.TABLE + " ORDER BY " + SodaFlavorTable.NAME + " ASC ", null );
+
+            if ( cursor.moveToFirst() )
+            {
+                do
+                {
+                    SodaFlavor sodaFlavor = new SodaFlavor();
+                    sodaFlavor.setName( cursor.getString( cursor.getColumnIndex( SodaFlavorTable.NAME ) ) );
+                    flavors.add( sodaFlavor );
+                } while ( cursor.moveToNext() );
+            }
+        } catch ( SQLiteException e )
+        {
+            e.printStackTrace();
+        }
+
+        return flavors;
+    }
+
+    // END TB_SODA_FLAVOR FUNCTIONS
 }

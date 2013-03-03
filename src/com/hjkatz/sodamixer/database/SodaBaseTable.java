@@ -1,6 +1,8 @@
 package com.hjkatz.sodamixer.database;
 
+import android.database.*;
 import android.database.sqlite.SQLiteDatabase;
+import com.hjkatz.sodamixer.model.*;
 
 /** Created By: Harrison Katz on Date: 2/28/13 */
 public class SodaBaseTable
@@ -19,6 +21,27 @@ public class SodaBaseTable
     public static void onCreate( SQLiteDatabase db )
     {
         db.execSQL( create_table );
+
+        // Inserting initial data
+        DatabaseUtils.InsertHelper ih = new DatabaseUtils.InsertHelper( db, TABLE );
+        db.beginTransaction();
+
+        try
+        {
+            int name = ih.getColumnIndex( NAME );
+
+            for ( String s : SodaBase.images.keySet() )
+            {
+                ih.prepareForReplace();
+                ih.bind( name, s );
+                ih.execute();
+            }
+            db.setTransactionSuccessful();
+        } finally
+        {
+            ih.close();
+            db.endTransaction();
+        }
     }
 
     public static void onUpgrade( SQLiteDatabase db, int oldVersion, int newVersion )

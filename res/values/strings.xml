@@ -11,6 +11,21 @@
     <string name="add_a_flavor">Add a Flavor!</string>
     <string name="choose_a_base">Choose a Base!</string>
 
+    <!-- Formatted Flavor Names -->
+    <string name="cherry">Cherry</string>
+    <string name="cherry_vanilla">Cherry Vanilla</string>
+    <string name="fruit_punch">Fruit Punch</string>
+    <string name="grape">Grape</string>
+    <string name="lemon">Lemon</string>
+    <string name="lime">Lime</string>
+    <string name="orange">Orange</string>
+    <string name="orange_vanilla">Orange Vanilla</string>
+    <string name="peach">Peach</string>
+    <string name="raspberry">Raspberry</string>
+    <string name="regular">Regular</string>
+    <string name="strawberry">Strawberry</string>
+    <string name="vanilla">Vanilla</string>
+
     <string-array name="flavors_array">
         <item>Dark</item>
         <item>Light</item>

@@ -3,9 +3,9 @@
   <component name="EntryPointsManager">
     <entry_points version="2.0" />
   </component>
-  <component name="IdProvider" IDEtalkID="CF2181D8513CA82443239E932A8586BA" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_7" assert-keyword="true" jdk-15="true" project-jdk-name="Android 4.2 Platform" project-jdk-type="Android SDK">
-    <output url="file://$PROJECT_DIR$/out" />
+  <component name="IdProvider" IDEtalkID="100F6386C8A9AA0A80A4B0A409538BAB" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_6" assert-keyword="true" jdk-15="true" project-jdk-name="Android 4.2 Platform" project-jdk-type="Android SDK">
+    <output url="file://$APPLICATION_HOME_DIR$/projects/output/sodamixer" />
   </component>
 </project>
 

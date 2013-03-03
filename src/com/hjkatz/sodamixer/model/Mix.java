@@ -5,20 +5,21 @@ import java.util.ArrayList;
 /** Created By: Harrison Katz on Date: 2/28/13 */
 public class Mix
 {
-
+    private Integer id;
     private String name;
-    private String descriptiong;
-    private String rating;
+    private String description;
+    private Integer rating;
     private ArrayList<Style> styles;
     private ArrayList<Soda> sodas;
 
     public void Mix()
     {
-        name = "";
-        descriptiong = "";
-        rating = "";
-        styles = new ArrayList<>();
-        sodas = new ArrayList<>();
+        id = null;
+        name = null;
+        description = null;
+        rating = null;
+        styles = null;
+        sodas = null;
     }
 
     public String getName()
@@ -31,22 +32,22 @@ public class Mix
         this.name = name;
     }
 
-    public String getDescriptiong()
+    public String getDescription()
     {
-        return descriptiong;
+        return description;
     }
 
-    public void setDescriptiong( String descriptiong )
+    public void setDescription( String description )
     {
-        this.descriptiong = descriptiong;
+        this.description = description;
     }
 
-    public String getRating()
+    public Integer getRating()
     {
         return rating;
     }
 
-    public void setRating( String rating )
+    public void setRating( Integer rating )
     {
         this.rating = rating;
     }
@@ -69,5 +70,15 @@ public class Mix
     public void setSodas( ArrayList<Soda> sodas )
     {
         this.sodas = sodas;
+    }
+
+    public Integer getId()
+    {
+        return id;
+    }
+
+    public void setId( Integer id )
+    {
+        this.id = id;
     }
 }

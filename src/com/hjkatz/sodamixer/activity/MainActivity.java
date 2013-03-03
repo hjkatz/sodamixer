@@ -12,13 +12,14 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.hjkatz.sodamixer.R;
 import com.hjkatz.sodamixer.fragment.CreateFragment;
 import com.hjkatz.sodamixer.fragment.MixesFragment;
+
 import java.util.ArrayList;
 
 /** Created by User: Harrison Katz on Date: 1/9/13 */
 public class MainActivity extends SherlockFragmentActivity
 {
 
-    private static ArrayList<Fragment> fragments = new ArrayList<>();
+    private static ArrayList<Fragment> fragments = new ArrayList<Fragment>();
     private static MixesFragment mixesFragment = new MixesFragment();
     private static CreateFragment createFragment = new CreateFragment();
 
@@ -56,8 +57,8 @@ public class MainActivity extends SherlockFragmentActivity
 
         //Add Tabs
         // Maintain Same Order as fragments!!!!!!!!!!!!!
-        bar.addTab( bar.newTab().setText( "Mixes" ).setTabListener( new SodaTabListener<>( viewPager ) ) );
-        bar.addTab( bar.newTab().setText( "Create" ).setTabListener( new SodaTabListener<>( viewPager ) ) );
+        bar.addTab( bar.newTab().setText( "Mixes" ).setTabListener( new SodaTabListener<MixesFragment>( viewPager ) ) );
+        bar.addTab( bar.newTab().setText( "Create" ).setTabListener( new SodaTabListener<CreateFragment>( viewPager ) ) );
 
         if ( savedInstanceState != null )
         {

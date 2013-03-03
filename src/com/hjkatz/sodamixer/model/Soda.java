@@ -3,14 +3,15 @@ package com.hjkatz.sodamixer.model;
 /** Created By: Harrison Katz on Date: 2/28/13 */
 public class Soda
 {
-
+    private Integer id;
     private String name;
     private SodaBase sodaBase;
     private SodaFlavor sodaFlavor;
 
     public void Soda()
     {
-        name = "";
+        id = null;
+        name = null;
     }
 
     public String getName()
@@ -41,5 +42,15 @@ public class Soda
     public void setSodaFlavor( SodaFlavor sodaFlavor )
     {
         this.sodaFlavor = sodaFlavor;
+    }
+
+    public Integer getId()
+    {
+        return id;
+    }
+
+    public void setId( Integer id )
+    {
+        this.id = id;
     }
 }
