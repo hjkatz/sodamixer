@@ -36,6 +36,33 @@ public class SodaBase
         images.put( "sprite_zero", R.drawable.ic_sprite_zero );
     }
 
+    public static Map<String, Integer> baseNames;
+
+    static
+    {
+        baseNames = new HashMap<String, Integer>();
+        baseNames.put( "barqs", R.string.barqs );
+        baseNames.put( "barqs_diet", R.string.barqs_diet );
+        baseNames.put( "coke", R.string.coke );
+        baseNames.put( "coke_caffeine_free", R.string.coke_caffeine_free );
+        baseNames.put( "coke_diet", R.string.coke_diet );
+        baseNames.put( "coke_zero", R.string.coke_zero );
+        baseNames.put( "dr_pepper", R.string.dr_pepper );
+        baseNames.put( "dr_pepper_diet", R.string.dr_pepper_diet );
+        baseNames.put( "fanta", R.string.fanta );
+        baseNames.put( "fanta_zero", R.string.fanta_zero );
+        baseNames.put( "hic", R.string.hic );
+        baseNames.put( "mellow_yellow", R.string.mellow_yellow );
+        baseNames.put( "minute_maid_lemonade", R.string.minute_maid_lemonade );
+        baseNames.put( "minute_maid_light", R.string.minute_maid_light );
+        baseNames.put( "pibb_xtra", R.string.pibb_xtra );
+        baseNames.put( "pibb_zero", R.string.pibb_zero );
+        baseNames.put( "powerade", R.string.powerade );
+        baseNames.put( "powerade_zero", R.string.powerade_zero );
+        baseNames.put( "sprite", R.string.sprite );
+        baseNames.put( "sprite_zero", R.string.sprite_zero );
+    }
+
     public void SodaBase()
     {
         id = null;

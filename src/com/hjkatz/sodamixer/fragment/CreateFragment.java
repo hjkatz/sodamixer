@@ -50,7 +50,7 @@ public class CreateFragment extends Fragment
     {
         if ( sodaRows < 5 )
         {
-            View newView = View.inflate( getActivity(), R.layout.soda_table_row, null );
+            final View newView = View.inflate( getActivity(), R.layout.soda_table_row, null );
             sodaTable.addView( newView );
             sodaRows++;
         }
@@ -66,10 +66,8 @@ public class CreateFragment extends Fragment
         sodaRows--;
     }
 
-    public void addSodaDialog( View v )
+    public void addSodaDialog( final View v )
     {
-        final int viewId = v.getId();
-
         final View sodaDialogView = View.inflate( getActivity(), R.layout.soda_dialog, null );
 
         ArrayList<SodaBase> bases = dbHelper.getAllSodaBases();
@@ -83,14 +81,12 @@ public class CreateFragment extends Fragment
 
         new AlertDialog.Builder( getActivity() ).setPositiveButton( android.R.string.ok, new DialogInterface.OnClickListener()
         {
-            // TODO CHANGES WRONG BUTTON TEXT
             @Override
             public void onClick( DialogInterface dialogInterface, int i )
             {
-                String base = ( (SodaBase) sodaBaseGallery.getSelectedItem() ).getName();
-                String flavor = ( (SodaFlavor) flavorSpinner.getSelectedItem() ).getName();
-                TableRow row = (TableRow) sodaTable.findViewById( viewId ).getParent();
-                Button rowButton = (Button) row.getChildAt( 0 );
+                String base = getResources().getString( SodaBase.baseNames.get( ( (SodaFlavor) sodaBaseGallery.getSelectedItem() ).getName() ) );
+                String flavor = getResources().getString( SodaFlavor.flavorNames.get( ( (SodaFlavor) flavorSpinner.getSelectedItem() ).getName() ) );
+                Button rowButton = (Button) ( (TableRow) v.getParent() ).getChildAt( 0 );
                 rowButton.setText( base + " " + flavor );
             }
         } ).setNegativeButton( android.R.string.cancel, new DialogInterface.OnClickListener()

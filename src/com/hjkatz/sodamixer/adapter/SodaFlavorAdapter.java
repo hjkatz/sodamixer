@@ -39,7 +39,7 @@ public class SodaFlavorAdapter implements SpinnerAdapter
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        viewHolder.textView.setText( sodaFlavors.get( position ).getName() );
+        viewHolder.textView.setText( context.getResources().getString( SodaFlavor.flavorNames.get( sodaFlavors.get( position ).getName() ) ) );
 
         return convertView;
     }
