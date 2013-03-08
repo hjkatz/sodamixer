@@ -1,19 +1,22 @@
 package com.hjkatz.sodamixer.adapter;
 
-import android.content.*;
-import android.view.*;
-import android.widget.*;
-import com.hjkatz.sodamixer.*;
-import com.hjkatz.sodamixer.model.*;
-
-import java.util.*;
+import android.content.Context;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ImageView;
+import android.widget.TextView;
+import com.hjkatz.sodamixer.R;
+import com.hjkatz.sodamixer.model.SodaBase;
+import java.util.ArrayList;
+import java.util.List;
 
 /** Created By: harrison on Date: 3/2/13 */
 public class SodaBaseAdapter extends ArrayAdapter
 {
 
     private ArrayList<SodaBase> sodaBases;
-    private Context context;
+    private Context             context;
 
     public SodaBaseAdapter( Context context, int textViewResourceId, List objects )
     {
@@ -26,7 +29,7 @@ public class SodaBaseAdapter extends ArrayAdapter
     private class ViewHolder
     {
         protected ImageView imageView;
-        protected TextView textView;
+        protected TextView  textView;
     }
 
     @Override
@@ -54,8 +57,7 @@ public class SodaBaseAdapter extends ArrayAdapter
         }
 
         viewHolder.textView.setText( sodaBases.get( position ).getName() );
-        viewHolder.imageView.setImageResource( SodaBase.images.get( sodaBases.get( position ).getName() ) );
-
+        viewHolder.imageView.setImageResource( context.getResources().getIdentifier( sodaBases.get( position ).getIcon(), "drawable", context.getPackageName() ) );
         return convertView;
     }
 

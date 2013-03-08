@@ -6,15 +6,15 @@ import android.database.sqlite.SQLiteDatabase;
 public class StyleTable
 {
 
-    public static final String TABLE = "tb_style";
-    public static final String PK = "style";
-    public static final String NAME = "name";
+    public static final  String TABLE        = "tb_style";
+    public static final  String PK           = "style";
+    public static final  String NAME         = "name";
     private static final String create_table = "CREATE TABLE " + TABLE +
-            " ( " +
-            PK + " INTEGER , " +
-            NAME + " TEXT NOT NULL , " +
-            " PRIMARY KEY ( " + PK + " ) " +
-            " ) ";
+                                               " ( " +
+                                               PK + " INTEGER , " +
+                                               NAME + " TEXT NOT NULL , " +
+                                               " PRIMARY KEY ( " + PK + " ) " +
+                                               " ) ";
 
     public static void onCreate( SQLiteDatabase db )
     {
@@ -23,7 +23,5 @@ public class StyleTable
 
     public static void onUpgrade( SQLiteDatabase db, int oldVersion, int newVersion )
     {
-        db.execSQL( "DROP TABLE IF EXISTS " + TABLE );
-        onCreate( db );
     }
 }

@@ -11,43 +11,6 @@
     <string name="add_a_flavor">Add a Flavor!</string>
     <string name="choose_a_base">Choose a Base!</string>
 
-    <!-- Formatted Flavor Names -->
-    <string name="cherry">Cherry</string>
-    <string name="cherry_vanilla">Cherry Vanilla</string>
-    <string name="fruit_punch">Fruit Punch</string>
-    <string name="grape">Grape</string>
-    <string name="lemon">Lemon</string>
-    <string name="lime">Lime</string>
-    <string name="orange">Orange</string>
-    <string name="orange_vanilla">Orange Vanilla</string>
-    <string name="peach">Peach</string>
-    <string name="raspberry">Raspberry</string>
-    <string name="regular">Regular</string>
-    <string name="strawberry">Strawberry</string>
-    <string name="vanilla">Vanilla</string>
-
-    <!-- Formatted Base Names-->
-    <string name="barqs">Barq\'s Root Beer</string>
-    <string name="barqs_diet">Barq\'s Diet Root Beer</string>
-    <string name="coke">Coca-Cola</string>
-    <string name="coke_caffeine_free">Caffeine Free Diet Coca-Cola</string>
-    <string name="coke_diet">Diet Coca-Cola</string>
-    <string name="coke_zero">Coca-Cola Zero</string>
-    <string name="dr_pepper">Dr. Pepper</string>
-    <string name="dr_pepper_diet">Diet Dr. Pepper</string>
-    <string name="fanta">Fanta</string>
-    <string name="fanta_zero">Fanta Zero</string>
-    <string name="hic">Hi-C</string>
-    <string name="mellow_yellow">Mellow Yellow</string>
-    <string name="minute_maid_lemonade">Minute Maid Lemonade</string>
-    <string name="minute_maid_light">Minute Maid Light</string>
-    <string name="pibb_xtra">Pibb Xtra</string>
-    <string name="pibb_zero">Pibb Zero</string>
-    <string name="powerade">Powerade</string>
-    <string name="powerade_zero">Powerade Zero</string>
-    <string name="sprite">Sprite</string>
-    <string name="sprite_zero">Sprite Zero</string>
-
 
     <string-array name="flavors_array">
         <item>Dark</item>

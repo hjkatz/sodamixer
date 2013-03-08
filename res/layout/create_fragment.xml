@@ -24,6 +24,7 @@
                     android:text="@string/name"
                     />
             <EditText
+                    android:id="@+id/name"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
@@ -46,6 +47,7 @@
                     android:text="@string/description"
                     />
             <EditText
+                    android:id="@+id/description"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
@@ -70,6 +72,7 @@
                     android:text="@string/style"
                     />
             <Spinner
+                    android:id="@+id/styleSpinner"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
@@ -121,14 +124,6 @@
 
         </TableLayout>
 
-
-        <GridView
-                android:id="@+id/gridView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                />
-
         <View
                 android:layout_width="fill_parent"
                 android:layout_height="2dp"
@@ -142,6 +137,15 @@
                 android:layout_margin="4dp"
                 android:layout_gravity="center"
                 android:src="@drawable/sodapopbottle"/>
+
+        <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_button_selector"
+                android:onClick="createMix"
+                android:textAppearance="@android:style/TextAppearance.Large"
+                android:text="@android:string/ok"
+                />
 
     </LinearLayout>
 </ScrollView>

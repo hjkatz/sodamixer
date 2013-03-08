@@ -1,19 +1,22 @@
 package com.hjkatz.sodamixer.helper;
 
 import android.content.Context;
-import android.database.*;
-import android.database.sqlite.*;
+import android.database.Cursor;
+import android.database.DatabaseUtils;
+import android.database.sqlite.SQLiteDatabase;
+import android.database.sqlite.SQLiteException;
+import android.database.sqlite.SQLiteOpenHelper;
 import com.hjkatz.sodamixer.database.*;
-import com.hjkatz.sodamixer.model.*;
-
-import java.util.*;
+import com.hjkatz.sodamixer.model.SodaBase;
+import com.hjkatz.sodamixer.model.SodaFlavor;
+import java.util.ArrayList;
 
 /** Created By: Harrison Katz on Date: 2/28/13 */
 public class SQLiteHelper extends SQLiteOpenHelper
 {
 
-    private static final String DATABASE_NAME = "sodamixer";
-    private static final int DATABASE_VERSION = 4;
+    private static final String DATABASE_NAME    = "sodamixer";
+    private static final int    DATABASE_VERSION = 1;
     private static SQLiteHelper dbHelper;
 
     private SQLiteHelper( Context context )
@@ -39,9 +42,11 @@ public class SQLiteHelper extends SQLiteOpenHelper
         SodaBaseTable.onCreate( db );
         SodaFlavorTable.onCreate( db );
         MixTable.onCreate( db );
-        SodaTable.onCreate( db );
         MixStyleTable.onCreate( db );
         MixSodaTable.onCreate( db );
+        BaseFlavorTable.onCreate( db );
+
+        setupBaseFlavorTable( db );
     }
 
     @Override
@@ -53,9 +58,9 @@ public class SQLiteHelper extends SQLiteOpenHelper
         SodaBaseTable.onUpgrade( db, oldVersion, newVersion );
         SodaFlavorTable.onUpgrade( db, oldVersion, newVersion );
         MixTable.onUpgrade( db, oldVersion, newVersion );
-        SodaTable.onUpgrade( db, oldVersion, newVersion );
         MixStyleTable.onUpgrade( db, oldVersion, newVersion );
         MixSodaTable.onUpgrade( db, oldVersion, newVersion );
+        BaseFlavorTable.onUpgrade( db, oldVersion, newVersion );
     }
 
     @Override
@@ -75,20 +80,32 @@ public class SQLiteHelper extends SQLiteOpenHelper
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
+        return getAllSodaBases( db );
+    }
+
+    public ArrayList<SodaBase> getAllSodaBases( SQLiteDatabase db )
+    {
+        ArrayList<SodaBase> bases = new ArrayList<SodaBase>();
+
         try
         {
-            Cursor cursor = db.rawQuery( "SELECT * FROM " + SodaBaseTable.TABLE + " ORDER BY " + SodaBaseTable.NAME + " ASC ", null );
+            Cursor cursor = db.rawQuery(
+                    "SELECT * FROM " + SodaBaseTable.TABLE + " ORDER BY " + SodaBaseTable.NAME + " ASC ", null );
 
             if ( cursor.moveToFirst() )
             {
                 do
                 {
                     SodaBase sodaBase = new SodaBase();
+                    sodaBase.setId( cursor.getInt( cursor.getColumnIndex( SodaBaseTable.PK ) ) );
                     sodaBase.setName( cursor.getString( cursor.getColumnIndex( SodaBaseTable.NAME ) ) );
+                    sodaBase.setNameFormatted( cursor.getString( cursor.getColumnIndex( SodaBaseTable.NAME_FORMATTED ) ) );
+                    sodaBase.setIcon( cursor.getString( cursor.getColumnIndex( SodaBaseTable.ICON ) ) );
                     bases.add( sodaBase );
                 } while ( cursor.moveToNext() );
             }
-        } catch ( SQLiteException e )
+        }
+        catch ( SQLiteException e )
         {
             e.printStackTrace();
         }
@@ -100,26 +117,73 @@ public class SQLiteHelper extends SQLiteOpenHelper
 
     // TB_SODA_FLAVOR FUNCTIONS
 
+    // REMEMBER TO UPDATE BELOW METHOD TOO
     public ArrayList<SodaFlavor> getAllSodaFlavors()
     {
         ArrayList<SodaFlavor> flavors = new ArrayList<SodaFlavor>();
 
         SQLiteDatabase db = dbHelper.getWritableDatabase();
 
+        return getAllSodaFlavors( db );
+    }
+
+    public ArrayList<SodaFlavor> getAllSodaFlavors( SQLiteDatabase db )
+    {
+        ArrayList<SodaFlavor> flavors = new ArrayList<SodaFlavor>();
+
         try
         {
-            Cursor cursor = db.rawQuery( "SELECT * FROM " + SodaFlavorTable.TABLE + " ORDER BY " + SodaFlavorTable.NAME + " ASC ", null );
+            Cursor cursor = db.rawQuery(
+                    "SELECT * FROM " + SodaFlavorTable.TABLE + " ORDER BY " + SodaFlavorTable.PK + " ASC ", null );
 
             if ( cursor.moveToFirst() )
             {
                 do
                 {
                     SodaFlavor sodaFlavor = new SodaFlavor();
+                    sodaFlavor.setId( cursor.getInt( cursor.getColumnIndex( SodaFlavorTable.PK ) ) );
                     sodaFlavor.setName( cursor.getString( cursor.getColumnIndex( SodaFlavorTable.NAME ) ) );
+                    sodaFlavor.setNameFormatted( cursor.getString( cursor.getColumnIndex( SodaFlavorTable.NAME_FORMATTED ) ) );
                     flavors.add( sodaFlavor );
                 } while ( cursor.moveToNext() );
             }
-        } catch ( SQLiteException e )
+        }
+        catch ( SQLiteException e )
+        {
+            e.printStackTrace();
+        }
+
+        return flavors;
+    }
+
+    public ArrayList<SodaFlavor> getFlavorsByBase( SodaBase base )
+    {
+        SQLiteDatabase db = dbHelper.getReadableDatabase();
+
+        ArrayList<SodaFlavor> flavors = new ArrayList<SodaFlavor>();
+
+        try
+        {
+            // TODO THIS IS BROKEN!
+            Cursor cursor = db.rawQuery(
+                    "SELECT " + BaseFlavorTable.FLAVOR + " , " + SodaFlavorTable.PK + " , " + SodaFlavorTable.NAME
+                    + " , " + SodaFlavorTable.NAME_FORMATTED + " FROM " + BaseFlavorTable.TABLE + " LEFT OUTER JOIN "
+                    + SodaFlavorTable.TABLE + " ON " + BaseFlavorTable.FLAVOR + " = " + SodaFlavorTable.PK + " WHERE "
+                    + BaseFlavorTable.BASE + " = " + base.getId() + " ORDER BY " + SodaFlavorTable.PK + " ASC ", null );
+
+            if ( cursor.moveToFirst() )
+            {
+                do
+                {
+                    SodaFlavor sodaFlavor = new SodaFlavor();
+                    sodaFlavor.setId( cursor.getInt( cursor.getColumnIndex( SodaFlavorTable.PK ) ) );
+                    sodaFlavor.setName( cursor.getString( cursor.getColumnIndex( SodaFlavorTable.NAME ) ) );
+                    sodaFlavor.setNameFormatted( cursor.getString( cursor.getColumnIndex( SodaFlavorTable.NAME_FORMATTED ) ) );
+                    flavors.add( sodaFlavor );
+                } while ( cursor.moveToNext() );
+            }
+        }
+        catch ( SQLiteException e )
         {
             e.printStackTrace();
         }
@@ -128,4 +192,279 @@ public class SQLiteHelper extends SQLiteOpenHelper
     }
 
     // END TB_SODA_FLAVOR FUNCTIONS
+
+    // TB_BASE_FLAVOR FUNCTIONS
+
+    private void setupBaseFlavorTable( SQLiteDatabase db )
+    {
+
+        DatabaseUtils.InsertHelper ih = new DatabaseUtils.InsertHelper( db, BaseFlavorTable.TABLE );
+        db.beginTransaction();
+
+        try
+        {
+            int base = ih.getColumnIndex( BaseFlavorTable.BASE );
+            int flavor = ih.getColumnIndex( BaseFlavorTable.FLAVOR );
+
+            ArrayList<SodaBase> bases = getAllSodaBases( db );
+            ArrayList<SodaFlavor> flavors = getAllSodaFlavors( db );
+
+            for ( SodaBase mBase : bases )
+            {
+                for ( SodaFlavor mFlavor : flavors )
+                {
+                    if ( mBase.getName().equals( "coke" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "vanilla" )
+                             || mFlavor.getName().equals( "lime" ) || mFlavor.getName().equals( "raspberry" )
+                             || mFlavor.getName().equals( "cherry" ) || mFlavor.getName().equals( "orange" )
+                             || mFlavor.getName().equals( "cherry_vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "coke_diet" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "orange" )
+                             || mFlavor.getName().equals( "cherry_vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "coke_zero" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "vanilla" )
+                             || mFlavor.getName().equals( "lime" ) || mFlavor.getName().equals( "raspberry" )
+                             || mFlavor.getName().equals( "cherry" ) || mFlavor.getName().equals( "orange" )
+                             || mFlavor.getName().equals( "cherry_vanilla" ) || mFlavor.getName().equals( "lemon" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "coke_caffeine_free" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "vanilla" )
+                             || mFlavor.getName().equals( "lime" ) || mFlavor.getName().equals( "raspberry" )
+                             || mFlavor.getName().equals( "cherry" ) || mFlavor.getName().equals( "orange" )
+                             || mFlavor.getName().equals( "cherry_vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "sprite" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "cherry" )
+                             || mFlavor.getName().equals( "strawberry" ) || mFlavor.getName().equals( "grape" )
+                             || mFlavor.getName().equals( "peach" ) || mFlavor.getName().equals( "orange" )
+                             || mFlavor.getName().equals( "raspberry" ) || mFlavor.getName().equals( "vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "sprite_zero" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "cherry" )
+                             || mFlavor.getName().equals( "strawberry" ) || mFlavor.getName().equals( "grape" )
+                             || mFlavor.getName().equals( "peach" ) || mFlavor.getName().equals( "orange" )
+                             || mFlavor.getName().equals( "raspberry" ) || mFlavor.getName().equals( "vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "fanta" ) )
+                    {
+                        if ( mFlavor.getName().equals( "orange" ) || mFlavor.getName().equals( "fruit_punch" )
+                             || mFlavor.getName().equals( "lime" ) || mFlavor.getName().equals( "grape" )
+                             || mFlavor.getName().equals( "strawberry" ) || mFlavor.getName().equals( "peach" )
+                             || mFlavor.getName().equals( "raspberry" ) || mFlavor.getName().equals( "cherry" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "fanta_zero" ) )
+                    {
+                        if ( mFlavor.getName().equals( "orange" ) || mFlavor.getName().equals( "fruit_punch" )
+                             || mFlavor.getName().equals( "lime" ) || mFlavor.getName().equals( "grape" )
+                             || mFlavor.getName().equals( "strawberry" ) || mFlavor.getName().equals( "peach" )
+                             || mFlavor.getName().equals( "raspberry" ) || mFlavor.getName().equals( "cherry" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "minute_maid_lemonade" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "cherry" )
+                             || mFlavor.getName().equals( "orange" ) || mFlavor.getName().equals( "raspberry" )
+                             || mFlavor.getName().equals( "strawberry" ) || mFlavor.getName().equals( "fruit_punch" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "minute_maid_light" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "cherry" )
+                             || mFlavor.getName().equals( "orange" ) || mFlavor.getName().equals( "raspberry" )
+                             || mFlavor.getName().equals( "strawberry" ) || mFlavor.getName().equals( "fruit_punch" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "powerade" ) )
+                    {
+                        if ( mFlavor.getName().equals( "orange" ) || mFlavor.getName().equals( "fruit_punch" )
+                             || mFlavor.getName().equals( "lime" ) || mFlavor.getName().equals( "grape" )
+                             || mFlavor.getName().equals( "strawberry" ) || mFlavor.getName().equals( "lemon" )
+                             || mFlavor.getName().equals( "raspberry" ) || mFlavor.getName().equals( "cherry" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "powerade_zero" ) )
+                    {
+                        if ( mFlavor.getName().equals( "orange" ) || mFlavor.getName().equals( "fruit_punch" )
+                             || mFlavor.getName().equals( "lime" ) || mFlavor.getName().equals( "grape" )
+                             || mFlavor.getName().equals( "strawberry" ) || mFlavor.getName().equals( "lemon" )
+                             || mFlavor.getName().equals( "raspberry" ) || mFlavor.getName().equals( "cherry" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "hic" ) )
+                    {
+                        if ( mFlavor.getName().equals( "cherry" ) || mFlavor.getName().equals( "orange" )
+                             || mFlavor.getName().equals( "raspberry" ) || mFlavor.getName().equals( "strawberry" )
+                             || mFlavor.getName().equals( "fruit_punch" ) || mFlavor.getName().equals( "grape" )
+                             || mFlavor.getName().equals( "raspberry_lime" )
+                             || mFlavor.getName().equals( "orange_vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "mellow_yellow" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "cherry" )
+                             || mFlavor.getName().equals( "grape" ) || mFlavor.getName().equals( "orange" )
+                             || mFlavor.getName().equals( "peach" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "pibb_xtra" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "cherry" )
+                             || mFlavor.getName().equals( "cherry_vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "pibb_zero" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "cherry" )
+                             || mFlavor.getName().equals( "cherry_vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "dr_pepper" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "cherry" )
+                             || mFlavor.getName().equals( "cherry_vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "dr_pepper_diet" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "cherry" )
+                             || mFlavor.getName().equals( "cherry_vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "barqs" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                    if ( mBase.getName().equals( "barqs_diet" ) )
+                    {
+                        if ( mFlavor.getName().equals( "regular" ) || mFlavor.getName().equals( "vanilla" ) )
+                        {
+                            ih.prepareForReplace();
+                            ih.bind( base, mBase.getId() );
+                            ih.bind( flavor, mFlavor.getId() );
+                            ih.execute();
+                        }
+                    }
+                }
+            }
+            db.setTransactionSuccessful();
+        }
+        finally
+        {
+            ih.close();
+            db.endTransaction();
+        }
+    }
+
+    // END TB_BADE_FLAVOR FUNCTIONS
 }

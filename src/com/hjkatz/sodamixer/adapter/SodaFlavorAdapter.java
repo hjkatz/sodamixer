@@ -1,20 +1,22 @@
 package com.hjkatz.sodamixer.adapter;
 
-import android.content.*;
-import android.database.*;
-import android.view.*;
-import android.widget.*;
+import android.content.Context;
+import android.database.DataSetObserver;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.SpinnerAdapter;
+import android.widget.TextView;
 import com.hjkatz.sodamixer.R;
-import com.hjkatz.sodamixer.model.*;
-
-import java.util.*;
+import com.hjkatz.sodamixer.model.SodaFlavor;
+import java.util.ArrayList;
+import java.util.List;
 
 /** Created By: harrison on Date: 3/2/13 */
 public class SodaFlavorAdapter implements SpinnerAdapter
 {
 
     private ArrayList<SodaFlavor> sodaFlavors;
-    private Context context;
+    private Context               context;
 
     public SodaFlavorAdapter( Context context, int textViewResourceId, List objects )
     {
@@ -39,32 +41,9 @@ public class SodaFlavorAdapter implements SpinnerAdapter
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        viewHolder.textView.setText( context.getResources().getString( SodaFlavor.flavorNames.get( sodaFlavors.get( position ).getName() ) ) );
+        viewHolder.textView.setText( sodaFlavors.get( position ).getNameFormatted() );
 
         return convertView;
-    }
-
-    private class ViewHolder
-    {
-        protected TextView textView;
-    }
-
-    @Override
-    public Object getItem( int position )
-    {
-        return sodaFlavors.get( position );
-    }
-
-    @Override
-    public long getItemId( int i )
-    {
-        return 0;
-    }
-
-    @Override
-    public boolean hasStableIds()
-    {
-        return false;
     }
 
     @Override
@@ -84,9 +63,27 @@ public class SodaFlavorAdapter implements SpinnerAdapter
             viewHolder = (ViewHolder) convertView.getTag();
         }
 
-        viewHolder.textView.setText( sodaFlavors.get( position ).getName() );
+        viewHolder.textView.setText( sodaFlavors.get( position ).getNameFormatted() );
 
         return convertView;
+    }
+
+    @Override
+    public Object getItem( int position )
+    {
+        return sodaFlavors.get( position );
+    }
+
+    @Override
+    public long getItemId( int i )
+    {
+        return 0;
+    }
+
+    @Override
+    public boolean hasStableIds()
+    {
+        return false;
     }
 
     @Override
@@ -121,5 +118,21 @@ public class SodaFlavorAdapter implements SpinnerAdapter
     public int getCount()
     {
         return sodaFlavors.size();
+    }
+
+    public ArrayList<SodaFlavor> getSodaFlavors()
+    {
+        return sodaFlavors;
+    }
+
+    public void setSodaFlavors( ArrayList<SodaFlavor> sodaFlavors )
+    {
+        this.sodaFlavors = sodaFlavors;
+    }
+
+    private class ViewHolder
+    {
+        protected TextView textView;
+
     }
 }

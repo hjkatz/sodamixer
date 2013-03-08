@@ -9,19 +9,20 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
 import com.hjkatz.sodamixer.R;
-import com.hjkatz.sodamixer.adapter.*;
-import com.hjkatz.sodamixer.helper.*;
-import com.hjkatz.sodamixer.model.*;
-
-import java.util.*;
+import com.hjkatz.sodamixer.adapter.SodaBaseAdapter;
+import com.hjkatz.sodamixer.adapter.SodaFlavorAdapter;
+import com.hjkatz.sodamixer.helper.SQLiteHelper;
+import com.hjkatz.sodamixer.model.SodaBase;
+import com.hjkatz.sodamixer.model.SodaFlavor;
+import java.util.ArrayList;
 
 /** Created By: Harrison Katz on Date: 2/26/13 */
 public class CreateFragment extends Fragment
 {
 
-    public static TableLayout sodaTable;
-    private int sodaRows;
-    private SQLiteHelper dbHelper;
+    public static TableLayout  sodaTable;
+    private       int          sodaRows;
+    private       SQLiteHelper dbHelper;
 
     @Override
     public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState )
@@ -76,18 +77,32 @@ public class CreateFragment extends Fragment
         final Gallery sodaBaseGallery = ( (Gallery) sodaDialogView.findViewById( R.id.sodaBaseGallery ) );
         final Spinner flavorSpinner = ( (Spinner) sodaDialogView.findViewById( R.id.flavorSpinner ) );
 
+        final SodaFlavorAdapter sfa = new SodaFlavorAdapter( getActivity(), R.id.flavorSpinner, flavors );
+        flavorSpinner.setAdapter( sfa );
         sodaBaseGallery.setAdapter( new SodaBaseAdapter( getActivity(), R.id.sodaBaseGallery, bases ) );
-        flavorSpinner.setAdapter( new SodaFlavorAdapter( getActivity(), R.id.flavorSpinner, flavors ) );
+        sodaBaseGallery.setOnItemSelectedListener( new AdapterView.OnItemSelectedListener()
+        {
+            @Override
+            public void onItemSelected( AdapterView<?> adapterView, View view, int i, long l )
+            {
+                ArrayList<SodaFlavor> flavors = dbHelper.getFlavorsByBase( (SodaBase) adapterView.getSelectedItem() );
+            }
+
+            @Override
+            public void onNothingSelected( AdapterView<?> adapterView )
+            {
+            }
+        } );
 
         new AlertDialog.Builder( getActivity() ).setPositiveButton( android.R.string.ok, new DialogInterface.OnClickListener()
         {
             @Override
             public void onClick( DialogInterface dialogInterface, int i )
             {
-                String base = getResources().getString( SodaBase.baseNames.get( ( (SodaFlavor) sodaBaseGallery.getSelectedItem() ).getName() ) );
-                String flavor = getResources().getString( SodaFlavor.flavorNames.get( ( (SodaFlavor) flavorSpinner.getSelectedItem() ).getName() ) );
+                String base = ( (SodaBase) sodaBaseGallery.getSelectedItem() ).getNameFormatted();
+                String flavor = ( (SodaFlavor) flavorSpinner.getSelectedItem() ).getNameFormatted();
                 Button rowButton = (Button) ( (TableRow) v.getParent() ).getChildAt( 0 );
-                rowButton.setText( base + " " + flavor );
+                rowButton.setText( flavor + " " + base );
             }
         } ).setNegativeButton( android.R.string.cancel, new DialogInterface.OnClickListener()
         {
@@ -97,5 +112,19 @@ public class CreateFragment extends Fragment
                 dialogInterface.dismiss();
             }
         } ).setView( sodaDialogView ).create().show();
+    }
+
+    public void createMix( View v )
+    {
+//        Mix mix = new Mix();
+//        Style style = new Style();
+//        style.setName( (String) ( (Spinner) getView().findViewById( R.id.styleSpinner ) ).getSelectedItem() );
+//        ArrayList<Style> styles = new ArrayList<Style>();
+//        styles.add( style );
+//        ArrayList<SodaBase> bases = new ArrayList<SodaBase>();
+//        for ( int i = 0; i < sodaRows; i++ )
+//        {
+//            SodaBase base = new SodaBase();
+//        }
     }
 }
