@@ -5,6 +5,7 @@
     <excludeFromCompile>
       <directory url="file://$PROJECT_DIR$/gen" includeSubdirectories="true" />
       <directory url="file://$APPLICATION_HOME_DIR$/projects/JakeWharton-ActionBarSherlock-e5c2d1c/library/gen" includeSubdirectories="true" />
+      <directory url="file://$APPLICATION_HOME_DIR$/projects/JakeWharton-Android-ViewPagerIndicator-8cd549f/library/gen" includeSubdirectories="true" />
     </excludeFromCompile>
     <resourceExtensions />
     <wildcardResourcePatterns>

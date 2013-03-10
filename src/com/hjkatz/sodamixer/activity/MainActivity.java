@@ -13,21 +13,25 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.hjkatz.sodamixer.R;
 import com.hjkatz.sodamixer.fragment.CreateFragment;
 import com.hjkatz.sodamixer.fragment.MixesFragment;
+import com.viewpagerindicator.*;
+
 import java.util.ArrayList;
 
 /** Created by User: Harrison Katz on Date: 1/9/13 */
 public class MainActivity extends SherlockFragmentActivity
 {
 
-    private static ArrayList<Fragment> fragments      = new ArrayList<Fragment>();
-    private static MixesFragment       mixesFragment  = new MixesFragment();
-    private static CreateFragment      createFragment = new CreateFragment();
+    private static ArrayList<Fragment> fragments = new ArrayList<Fragment>();
+    private static MixesFragment mixesFragment = new MixesFragment();
+    private static CreateFragment createFragment = new CreateFragment();
 
     static
     {
-        //Maintain Same Order as Adding Tabs!!!!!!!!!
+        //Maintain Same Order as Adding Titles!!!!!!!!!
         fragments.add( mixesFragment );
         fragments.add( createFragment );
+        fragments.add( mixesFragment );
+        fragments.add( mixesFragment );
     }
 
     public void onCreate( Bundle savedInstanceState )
@@ -35,46 +39,22 @@ public class MainActivity extends SherlockFragmentActivity
         super.onCreate( savedInstanceState );
         this.setContentView( R.layout.launch_activity );
 
-        Log.i( "SodaMixer", "/¯¯¯¯¯/ ' /¯¯¯¯¯\\ |¯¯¯¯\\°'     /¯¯¯¯¯|          |¯¯¯\\/¯¯¯|    O    \\¯¯|¯¯/  /¯x¯¯\\ |¯¯¯¯\\ " );
-        Log.i( "SodaMixer", "\\ __¯¯¯\\' |     x    |'|  x     \\   /     !     |          |            '| |¯¯¯¯|   >  < °'|   (\\__/||   x  <|'" );
-        Log.i( "SodaMixer", "/______/| \\_____/ |_____/ /___/¯|__'|          |.__|\\/|__.| |____| /__|__\\  \\____\\ |__|\\__\\" );
+        Log.i( "SodaMixer",
+                "/¯¯¯¯¯/ ' /¯¯¯¯¯\\ |¯¯¯¯\\°'     /¯¯¯¯¯|          |¯¯¯\\/¯¯¯|    O    \\¯¯|¯¯/  /¯x¯¯\\ |¯¯¯¯\\ " );
+        Log.i( "SodaMixer",
+                "\\ __¯¯¯\\' |     x    |'|  x     \\   /     !     |          |            '| |¯¯¯¯|   >  < °'|   (\\__/||   x  <|'" );
+        Log.i( "SodaMixer",
+                "/______/| \\_____/ |_____/ /___/¯|__'|          |.__|\\/|__.| |____| /__|__\\  \\____\\ |__|\\__\\" );
 
         MainPagerAdapter fragmentPagerAdapter = new MainPagerAdapter( getSupportFragmentManager() );
         fragmentPagerAdapter.setFragments( fragments );
 
         ViewPager viewPager = (ViewPager) findViewById( R.id.viewPager );
         viewPager.setAdapter( fragmentPagerAdapter );
-        viewPager.setOnPageChangeListener( new ViewPager.SimpleOnPageChangeListener()
-        {
-            @Override
-            public void onPageSelected( int position )
-            {
-                // When swiping between pages, select the
-                // corresponding tab.
-                getSupportActionBar().setSelectedNavigationItem( position );
-            }
-        } );
 
-        final ActionBar bar = getSupportActionBar();
-        bar.setNavigationMode( ActionBar.NAVIGATION_MODE_TABS );
-        bar.setDisplayOptions( 0, ActionBar.DISPLAY_USE_LOGO );
+        com.viewpagerindicator.TitlePageIndicator indicator = (TitlePageIndicator) findViewById( R.id.indicator );
+        indicator.setViewPager( viewPager );
 
-        //Add Tabs
-        // Maintain Same Order as fragments!!!!!!!!!!!!!
-        bar.addTab( bar.newTab().setText( "Mixes" ).setTabListener( new SodaTabListener<MixesFragment>( viewPager ) ) );
-        bar.addTab( bar.newTab().setText( "Create" ).setTabListener( new SodaTabListener<CreateFragment>( viewPager ) ) );
-
-        if ( savedInstanceState != null )
-        {
-            bar.setSelectedNavigationItem( savedInstanceState.getInt( "tab", 0 ) );
-        }
-    }
-
-    @Override
-    protected void onSaveInstanceState( Bundle outState )
-    {
-        super.onSaveInstanceState( outState );
-        outState.putInt( "tab", getActionBar().getSelectedNavigationIndex() );
     }
 
     public void addSodaRow( View v )
@@ -92,34 +72,11 @@ public class MainActivity extends SherlockFragmentActivity
         createFragment.addSodaDialog( v );
     }
 
-    public static class SodaTabListener<T extends Fragment> implements ActionBar.TabListener
-    {
-        private ViewPager mPager;
-
-        public SodaTabListener( ViewPager pager )
-        {
-            mPager = pager;
-        }
-
-        public void onTabSelected( ActionBar.Tab tab, FragmentTransaction ft )
-        {
-            mPager.setCurrentItem( tab.getPosition() );
-        }
-
-        @Override
-        public void onTabUnselected( ActionBar.Tab tab, FragmentTransaction ft )
-        {
-        }
-
-        @Override
-        public void onTabReselected( ActionBar.Tab tab, FragmentTransaction ft )
-        {
-        }
-    }
-
     private class MainPagerAdapter extends FragmentPagerAdapter
     {
         ArrayList<Fragment> mFragments;
+
+        private final String[] titles = { "Mixes", "Create", "Mixes2", "Mixes3" };
 
         public MainPagerAdapter( FragmentManager fm )
         {
@@ -141,6 +98,12 @@ public class MainActivity extends SherlockFragmentActivity
         public int getCount()
         {
             return mFragments.size();
+        }
+
+        @Override
+        public CharSequence getPageTitle( int position )
+        {
+            return titles[position];
         }
     }
 }
