@@ -14,23 +14,28 @@ import com.hjkatz.sodamixer.adapter.SodaFlavorAdapter;
 import com.hjkatz.sodamixer.helper.SQLiteHelper;
 import com.hjkatz.sodamixer.model.SodaBase;
 import com.hjkatz.sodamixer.model.SodaFlavor;
+
 import java.util.ArrayList;
 
 /** Created By: Harrison Katz on Date: 2/26/13 */
 public class CreateFragment extends Fragment
 {
 
-    public static TableLayout  sodaTable;
-    private       int          sodaRows;
-    private       SQLiteHelper dbHelper;
+    public static TableLayout sodaTable;
+    private int sodaRows;
+    private SQLiteHelper dbHelper;
 
     @Override
-    public View onCreateView( LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState )
+    public View onCreateView( LayoutInflater inflater,
+                              ViewGroup container,
+                              Bundle savedInstanceState )
     {
         sodaRows = 0;
         dbHelper = SQLiteHelper.getDbHelper( getActivity() );
 
-        return inflater.inflate( R.layout.create_fragment, container, false );
+        return inflater.inflate( R.layout.create_fragment,
+                container,
+                false );
     }
 
     @Override
@@ -51,13 +56,17 @@ public class CreateFragment extends Fragment
     {
         if ( sodaRows < 5 )
         {
-            final View newView = View.inflate( getActivity(), R.layout.soda_table_row, null );
+            final View newView = View.inflate( getActivity(),
+                    R.layout.soda_table_row,
+                    null );
             sodaTable.addView( newView );
             sodaRows++;
         }
         else
         {
-            Toast.makeText( getActivity(), "Only 5 Sodas allowed in a mix!", Toast.LENGTH_SHORT ).show();
+            Toast.makeText( getActivity(),
+                    "Only 5 Sodas allowed in a mix!",
+                    Toast.LENGTH_SHORT ).show();
         }
     }
 
@@ -69,7 +78,9 @@ public class CreateFragment extends Fragment
 
     public void addSodaDialog( final View v )
     {
-        final View sodaDialogView = View.inflate( getActivity(), R.layout.soda_dialog, null );
+        final View sodaDialogView = View.inflate( getActivity(),
+                R.layout.soda_dialog,
+                null );
 
         ArrayList<SodaBase> bases = dbHelper.getAllSodaBases();
         ArrayList<SodaFlavor> flavors = dbHelper.getAllSodaFlavors();
@@ -77,15 +88,24 @@ public class CreateFragment extends Fragment
         final Gallery sodaBaseGallery = ( (Gallery) sodaDialogView.findViewById( R.id.sodaBaseGallery ) );
         final Spinner flavorSpinner = ( (Spinner) sodaDialogView.findViewById( R.id.flavorSpinner ) );
 
-        final SodaFlavorAdapter sfa = new SodaFlavorAdapter( getActivity(), R.id.flavorSpinner, flavors );
+        final SodaFlavorAdapter sfa = new SodaFlavorAdapter( getActivity(),
+                R.id.flavorSpinner,
+                flavors );
         flavorSpinner.setAdapter( sfa );
-        sodaBaseGallery.setAdapter( new SodaBaseAdapter( getActivity(), R.id.sodaBaseGallery, bases ) );
+        sodaBaseGallery.setAdapter( new SodaBaseAdapter( getActivity(),
+                R.id.sodaBaseGallery,
+                bases ) );
         sodaBaseGallery.setOnItemSelectedListener( new AdapterView.OnItemSelectedListener()
         {
             @Override
-            public void onItemSelected( AdapterView<?> adapterView, View view, int i, long l )
+            public void onItemSelected( AdapterView<?> adapterView,
+                                        View view,
+                                        int i,
+                                        long l )
             {
                 ArrayList<SodaFlavor> flavors = dbHelper.getFlavorsByBase( (SodaBase) adapterView.getSelectedItem() );
+                sfa.setSodaFlavors( flavors );
+                flavorSpinner.invalidate();
             }
 
             @Override
@@ -94,24 +114,28 @@ public class CreateFragment extends Fragment
             }
         } );
 
-        new AlertDialog.Builder( getActivity() ).setPositiveButton( android.R.string.ok, new DialogInterface.OnClickListener()
-        {
-            @Override
-            public void onClick( DialogInterface dialogInterface, int i )
-            {
-                String base = ( (SodaBase) sodaBaseGallery.getSelectedItem() ).getNameFormatted();
-                String flavor = ( (SodaFlavor) flavorSpinner.getSelectedItem() ).getNameFormatted();
-                Button rowButton = (Button) ( (TableRow) v.getParent() ).getChildAt( 0 );
-                rowButton.setText( flavor + " " + base );
-            }
-        } ).setNegativeButton( android.R.string.cancel, new DialogInterface.OnClickListener()
-        {
-            @Override
-            public void onClick( DialogInterface dialogInterface, int i )
-            {
-                dialogInterface.dismiss();
-            }
-        } ).setView( sodaDialogView ).create().show();
+        new AlertDialog.Builder( getActivity() ).setPositiveButton( android.R.string.ok,
+                new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick( DialogInterface dialogInterface,
+                                         int i )
+                    {
+                        String base = ( (SodaBase) sodaBaseGallery.getSelectedItem() ).getNameFormatted();
+                        String flavor = ( (SodaFlavor) flavorSpinner.getSelectedItem() ).getNameFormatted();
+                        Button rowButton = (Button) ( (TableRow) v.getParent() ).getChildAt( 0 );
+                        rowButton.setText( flavor + " " + base );
+                    }
+                } ).setNegativeButton( android.R.string.cancel,
+                new DialogInterface.OnClickListener()
+                {
+                    @Override
+                    public void onClick( DialogInterface dialogInterface,
+                                         int i )
+                    {
+                        dialogInterface.dismiss();
+                    }
+                } ).setView( sodaDialogView ).create().show();
     }
 
     public void createMix( View v )

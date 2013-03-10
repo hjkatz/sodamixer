@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/library/library.iml" filepath="$PROJECT_DIR$/../JakeWharton-ActionBarSherlock-e5c2d1c/library/library.iml" />
       <module fileurl="file://$APPLICATION_HOME_DIR$/projects/JakeWharton-ActionBarSherlock-e5c2d1c/library/library.iml" filepath="$APPLICATION_HOME_DIR$/projects/JakeWharton-ActionBarSherlock-e5c2d1c/library/library.iml" />
       <module fileurl="file://$PROJECT_DIR$/sodamixer.iml" filepath="$PROJECT_DIR$/sodamixer.iml" />
     </modules>

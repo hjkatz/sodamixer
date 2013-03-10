@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AndroidConfiguredLogFilters">
+    <filters>
+      <filter>
+        <option name="logLevel" value="verbose" />
+        <option name="logMessagePattern" value="" />
+        <option name="logTagPattern" value="" />
+        <option name="name" value="PID" />
+        <option name="pid" value="26092" />
+      </filter>
+    </filters>
+  </component>
   <component name="AndroidDesignerProfile">
     <option name="fullProfile">
       <profile>
@@ -22,39 +33,89 @@
       </GlobalState>
     </option>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="ba45b498-80ff-44f7-851b-10b21676efb6" name="Default" comment="">
-      <change type="DELETED" beforePath="F:\Projects\sodamixer\src\com\hjkatz\sodamixer\model\Soda.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/BaseFlavorTable.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseFlavorTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_barqs.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_barqs.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_barqs.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_barqs.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_barqs.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_barqs.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_barqs_diet.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_barqs_diet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_barqs_diet.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_barqs_diet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_barqs_diet.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_barqs_diet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_coke.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_coke.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_coke.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_coke.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_coke.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_coke.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_coke_caffeine_free.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_coke_caffeine_free.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_coke_caffeine_free.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_coke_caffeine_free.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_coke_caffeine_free.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_coke_caffeine_free.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_coke_diet.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_coke_diet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_coke_diet.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_coke_diet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_coke_diet.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_coke_diet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_coke_zero.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_coke_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_coke_zero.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_coke_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_coke_zero.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_coke_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_dr_pepper.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_dr_pepper.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_dr_pepper.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_dr_pepper.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_dr_pepper.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_dr_pepper.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_dr_pepper_diet.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_dr_pepper_diet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_dr_pepper_diet.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_dr_pepper_diet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_dr_pepper_diet.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_dr_pepper_diet.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_fanta.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_fanta.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_fanta.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_fanta.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_fanta.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_fanta.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_fanta_zero.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_fanta_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_fanta_zero.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_fanta_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_fanta_zero.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_fanta_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_hic.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_hic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_hic.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_hic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_hic.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_hic.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_mellow_yellow.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_mellow_yellow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_mellow_yellow.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_mellow_yellow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_mellow_yellow.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_mellow_yellow.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_minute_maid_lemonade.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_minute_maid_lemonade.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_minute_maid_lemonade.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_minute_maid_lemonade.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_minute_maid_lemonade.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_minute_maid_lemonade.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_minute_maid_light.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_minute_maid_light.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_minute_maid_light.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_minute_maid_light.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_minute_maid_light.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_minute_maid_light.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_pibb_xtra.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_pibb_xtra.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_pibb_xtra.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_pibb_xtra.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_pibb_xtra.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_pibb_xtra.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_pibb_zero.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_pibb_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_pibb_zero.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_pibb_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_pibb_zero.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_pibb_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_powerade.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_powerade.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_powerade.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_powerade.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_powerade.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_powerade.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_powerade_zero.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_powerade_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_powerade_zero.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_powerade_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_powerade_zero.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_powerade_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_sprite.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_sprite.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_sprite.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_sprite.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_sprite.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_sprite.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-hdpi/ic_sprite_zero.png" afterPath="$PROJECT_DIR$/res/drawable-hdpi/ic_sprite_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-mdpi/ic_sprite_zero.png" afterPath="$PROJECT_DIR$/res/drawable-mdpi/ic_sprite_zero.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/drawable-xhdpi/ic_sprite_zero.png" afterPath="$PROJECT_DIR$/res/drawable-xhdpi/ic_sprite_zero.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/hjkatz/sodamixer/Manifest.java" afterPath="$PROJECT_DIR$/gen/com/hjkatz/sodamixer/Manifest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/Mix.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/Mix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixSodaTable.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixSodaTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixStyleTable.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixStyleTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixTable.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixTable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gen/com/hjkatz/sodamixer/R.java" afterPath="$PROJECT_DIR$/gen/com/hjkatz/sodamixer/R.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/SodaBase.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/SodaBase.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/adapter/SodaBaseAdapter.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/adapter/SodaBaseAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseTable.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/SodaFlavor.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/SodaFlavor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/adapter/SodaFlavorAdapter.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/adapter/SodaFlavorAdapter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaFlavorTable.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaFlavorTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/create_fragment.xml" afterPath="$PROJECT_DIR$/res/layout/create_fragment.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/soda_flavor_spinner_view.xml" afterPath="$PROJECT_DIR$/res/layout/soda_flavor_spinner_view.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="F:\Projects\sodamixer\src\com\hjkatz\sodamixer\database\SodaTable.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/BaseFlavorTable.java" />
     </list>
     <ignored path="sodamixer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362696453787" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362887512473" ignored="false" />
     <file path="/green_button_selector.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362267463216" ignored="false" />
     <file path="/red_button_selector.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362267475383" ignored="false" />
-    <file path="/soda_dialog.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362321024935" ignored="false" />
+    <file path="/soda_dialog.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362887050723" ignored="false" />
     <file path="/fragment.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362525682084" ignored="false" />
     <file path="/SodaBaseAdapter.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362705592610" ignored="false" />
     <file path="/soda_base_gallery_view.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362283207817" ignored="false" />
@@ -63,19 +124,18 @@
     <file path="/SodaBase.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362697302478" ignored="false" />
     <file path="/SodaFlavor.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362703310304" ignored="false" />
     <file path="/Style.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362276939166" ignored="false" />
-    <file path="/CreateFragment.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362714100452" ignored="false" />
-    <file path="$APPLICATION_HOME_DIR$/projects/JakeWharton-ActionBarSherlock-e5c2d1c/library/project.properties" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362280900973" ignored="false" />
+    <file path="/CreateFragment.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362888775298" ignored="false" />
     <file path="/MainActivity.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362708443458" ignored="false" />
     <file path="/SodaBaseTable.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362701682075" ignored="false" />
-    <file path="/SQLiteHelper.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362716706083" ignored="false" />
+    <file path="/SQLiteHelper.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362886699450" ignored="false" />
     <file path="/strings.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362351297201" ignored="false" />
     <file path="/SodaFlavorTable.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362703081752" ignored="false" />
     <file path="/SodaFlavorAdapter.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362705704600" ignored="false" />
-    <file path="/soda_flavor_spinner_view.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362289257794" ignored="false" />
+    <file path="/soda_flavor_spinner_view.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362886995423" ignored="false" />
     <file path="/create_fragment.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362361902845" ignored="false" />
     <file path="/BaseFlavorTable.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362612377971" ignored="false" />
-    <file path="/a.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362703237690" ignored="false" />
-    <file path="/sample.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362703263379" ignored="false" />
+    <file path="/a.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362799843709" ignored="false" />
+    <file path="/sample.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362799878552" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -139,27 +199,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="CreateFragment.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="CreateFragment.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="87" column="0" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="85" column="0" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.1175">
+              <folding>
+                <element signature="e#3710#4360#0" expanded="true" />
+                <element signature="e#4341#4342#0" expanded="true" />
+                <element signature="e#4423#4744#0" expanded="true" />
+                <element signature="e#4725#4726#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SQLiteHelper.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="SQLiteHelper.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="166" column="35" selection-start="5304" selection-end="5304" vertical-scroll-proportion="0.34249714">
+            <state line="194" column="28" selection-start="5939" selection-end="5939" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2383#2393#0" expanded="true" />
-                <element signature="e#2627#2637#0" expanded="true" />
-                <element signature="e#3857#3869#0" expanded="true" />
-                <element signature="e#4113#4125#0" expanded="true" />
-                <element signature="e#5230#5242#0" expanded="true" />
+                <element signature="e#2712#2722#0" expanded="true" />
+                <element signature="e#2956#2966#0" expanded="true" />
+                <element signature="e#4206#4218#0" expanded="true" />
+                <element signature="e#4462#4474#0" expanded="true" />
+                <element signature="e#5663#5675#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SodaBaseFlavorTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseFlavorTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="11" column="54" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -200,9 +274,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixSodaTable.java" />
-        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixStyleTable.java" />
-        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixTable.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/Mix.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/BaseFlavorTable.java" />
@@ -213,17 +284,19 @@
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/adapter/SodaBaseAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/adapter/SodaFlavorAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java" />
-        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseTable.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseFlavorTable.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java" />
+        <option value="$PROJECT_DIR$/res/layout/soda_flavor_spinner_view.xml" />
+        <option value="$PROJECT_DIR$/res/layout/soda_dialog.xml" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="y" value="27" />
+    <option name="width" value="1280" />
+    <option name="height" value="773" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -259,7 +332,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -314,50 +386,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="helper" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sodamixer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sodamixer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sodamixer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="fragment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sodamixer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sodamixer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sodamixer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="database" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -372,30 +400,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sodamixer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="activity" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sodamixer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
+              <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -409,14 +420,14 @@
     <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="preferences.sourceCode.Java" />
     <property name="MemberChooser.sorted" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/libs/android-support-v4.jar!/" />
+    <property name="last_opened_file_path" value="$USER_HOME$/android-sdks/extras/android/support/v4/android-support-v4.jar!/" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_SERIALS" value="0149A97F19001015" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="OUYA" />
+    <property name="ANDROID_EXTENDED_DEVICE_CHOOSER_AVD" value="Nexus1" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
@@ -429,8 +440,8 @@
       <recent name="com.hjkatz.sodamixer.adapter" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/res/layout" />
       <recent name="$PROJECT_DIR$/res" />
+      <recent name="$PROJECT_DIR$/res/layout" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.hjkatz.sodamixer" />
@@ -622,11 +633,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="27" width="1280" height="773" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32873377" sideWeight="0.6718576" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32977587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -636,20 +648,19 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32852563" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31590655" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.512792" sideWeight="0.51866883" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31511253" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.511254" sideWeight="0.51866883" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21771611" sideWeight="0.487208" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32814237" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21717991" sideWeight="0.68488747" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279743" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32905984" sideWeight="0.6718576" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32925472" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -717,13 +728,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="5" selection-start="937" selection-end="937" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="25" column="5" selection-start="738" selection-end="738" vertical-scroll-proportion="0.45819014">
@@ -733,9 +737,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/Mix.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="64" column="5" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="64" column="5" selection-start="1195" selection-end="1195" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
@@ -748,13 +750,6 @@
     <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaFlavorTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="55" column="39" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.7250859">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/BaseFlavorTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="0" selection-start="1397" selection-end="1397" vertical-scroll-proportion="0.49484536">
           <folding />
         </state>
       </provider>
@@ -780,32 +775,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/adapter/SodaFlavorAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="81" selection-start="2048" selection-end="2048" vertical-scroll-proportion="0.3327674">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/MixesFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="41" selection-start="2965" selection-end="2965" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://F:/SDK/adt-bundle-windows-x86_64 (1)/adt-bundle-windows-x86_64/sdk/platforms/android-17/android.jar!/android/widget/AdapterView.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="60" column="28" selection-start="2763" selection-end="2763" vertical-scroll-proportion="0.19587629">
           <folding />
         </state>
       </provider>
@@ -820,23 +792,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/MixesFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="87" column="0" selection-start="2877" selection-end="2877" vertical-scroll-proportion="0.0">
+        <state line="20" column="0" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseFlavorTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="54" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="166" column="35" selection-start="5304" selection-end="5304" vertical-scroll-proportion="0.34249714">
+        <state line="194" column="28" selection-start="5939" selection-end="5939" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2383#2393#0" expanded="true" />
-            <element signature="e#2627#2637#0" expanded="true" />
-            <element signature="e#3857#3869#0" expanded="true" />
-            <element signature="e#4113#4125#0" expanded="true" />
-            <element signature="e#5230#5242#0" expanded="true" />
+            <element signature="e#2712#2722#0" expanded="true" />
+            <element signature="e#2956#2966#0" expanded="true" />
+            <element signature="e#4206#4218#0" expanded="true" />
+            <element signature="e#4462#4474#0" expanded="true" />
+            <element signature="e#5663#5675#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/soda_flavor_spinner_view.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="32" selection-start="330" selection-end="330" vertical-scroll-proportion="0.18817204">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/adapter/SodaFlavorAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="54" selection-start="741" selection-end="741" vertical-scroll-proportion="0.57885903">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/soda_dialog.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="48" column="41" selection-start="1822" selection-end="1822" vertical-scroll-proportion="0.7311828">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="85" column="0" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.1175">
+          <folding>
+            <element signature="e#3710#4360#0" expanded="true" />
+            <element signature="e#4341#4342#0" expanded="true" />
+            <element signature="e#4423#4744#0" expanded="true" />
+            <element signature="e#4725#4726#0" expanded="true" />
           </folding>
         </state>
       </provider>
