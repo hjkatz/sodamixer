@@ -24,14 +24,16 @@ public class MainActivity extends SherlockFragmentActivity
     private static ArrayList<Fragment> fragments = new ArrayList<Fragment>();
     private static MixesFragment mixesFragment = new MixesFragment();
     private static CreateFragment createFragment = new CreateFragment();
+    private static MixesFragment mixes2Fragment = new MixesFragment();
+    private static MixesFragment mixes3Fragment = new MixesFragment();
 
     static
     {
         //Maintain Same Order as Adding Titles!!!!!!!!!
         fragments.add( mixesFragment );
         fragments.add( createFragment );
-        fragments.add( mixesFragment );
-        fragments.add( mixesFragment );
+        fragments.add( mixes2Fragment );
+        fragments.add( mixes3Fragment );
     }
 
     public void onCreate( Bundle savedInstanceState )
