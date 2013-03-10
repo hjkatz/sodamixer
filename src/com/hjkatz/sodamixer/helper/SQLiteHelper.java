@@ -7,8 +7,7 @@ import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteException;
 import android.database.sqlite.SQLiteOpenHelper;
 import com.hjkatz.sodamixer.database.*;
-import com.hjkatz.sodamixer.model.SodaBase;
-import com.hjkatz.sodamixer.model.SodaFlavor;
+import com.hjkatz.sodamixer.model.*;
 
 import java.util.ArrayList;
 
@@ -593,5 +592,40 @@ public class SQLiteHelper extends SQLiteOpenHelper
         }
     }
 
-    // END TB_BADE_FLAVOR FUNCTIONS
+    // END TB_BASE_FLAVOR FUNCTIONS
+
+    // TB_STYLE FUNCTIONS
+
+    public ArrayList<Style> getAllStyles( SQLiteDatabase db )
+    {
+        ArrayList<Style> styles = new ArrayList<Style>();
+
+        try
+        {
+            Cursor cursor = db.rawQuery( "SELECT * FROM " +
+                    StyleTable.TABLE +
+                    " ORDER BY " +
+                    StyleTable.NAME_FORMATTED +
+                    " ASC ",
+                    null );
+
+            if ( cursor.moveToFirst() )
+            {
+                do
+                {
+                    Style style = new Style();
+                    style.setId( cursor.getInt( cursor.getColumnIndex( SodaFlavorTable.PK ) ) );
+                    style.setNameFormatted( cursor.getString( cursor.getColumnIndex( SodaFlavorTable.NAME_FORMATTED ) ) );
+                    styles.add( style );
+                } while ( cursor.moveToNext() );
+            }
+        } catch ( SQLiteException e )
+        {
+            e.printStackTrace();
+        }
+
+        return styles;
+    }
+
+    // END TB_STYLE FUNCTIONS
 }

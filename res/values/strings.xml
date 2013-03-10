@@ -10,17 +10,4 @@
     <string name="create_mix_name_hint">my drink</string>
     <string name="add_a_flavor">Add a Flavor!</string>
     <string name="choose_a_base">Choose a Base!</string>
-
-
-    <string-array name="flavors_array">
-        <item>Dark</item>
-        <item>Light</item>
-        <item>Energy</item>
-        <item>Sweet</item>
-        <item>Bitter</item>
-        <item>Sour</item>
-        <item>Fruity</item>
-        <item>Carbonated</item>
-        <item>Non-Carbonated</item>
-    </string-array>
 </resources>

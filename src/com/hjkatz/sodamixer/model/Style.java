@@ -4,22 +4,22 @@ package com.hjkatz.sodamixer.model;
 public class Style
 {
     private Integer id;
-    private String name;
+    private String nameFormatted;
 
     public void Style()
     {
         id = null;
-        name = null;
+        nameFormatted = null;
     }
 
-    public String getName()
+    public String getNameFormatted()
     {
-        return name;
+        return nameFormatted;
     }
 
-    public void setName( String name )
+    public void setNameFormatted( String nameFormatted )
     {
-        this.name = name;
+        this.nameFormatted = nameFormatted;
     }
 
     public Integer getId()

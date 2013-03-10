@@ -52,6 +52,7 @@ public class CreateFragment extends Fragment
         super.onDestroyView();
     }
 
+    // TODO Popup dialog at the end of this with the next child selected
     public void addSodaRow( View v )
     {
         if ( sodaRows < 5 )
@@ -97,6 +98,7 @@ public class CreateFragment extends Fragment
                 bases ) );
         sodaBaseGallery.setOnItemSelectedListener( new AdapterView.OnItemSelectedListener()
         {
+            // TODO fix cherry being in all spinners...
             @Override
             public void onItemSelected( AdapterView<?> adapterView,
                                         View view,
@@ -150,5 +152,13 @@ public class CreateFragment extends Fragment
 //        {
 //            SodaBase base = new SodaBase();
 //        }
+    }
+
+    public void selectStyles( View v )
+    {
+    }
+
+    public void clearUI( View v )
+    {
     }
 }

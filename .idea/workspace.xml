@@ -33,19 +33,23 @@
       </GlobalState>
     </option>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="ERROR" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="ba45b498-80ff-44f7-851b-10b21676efb6" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/android_support_v4.xml" afterPath="" />
+    <list default="true" id="ba45b498-80ff-44f7-851b-10b21676efb6" name="Default" comment="Added styles, Added style db calls">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/launch_activity.xml" afterPath="$PROJECT_DIR$/res/layout/launch_activity.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/project.properties" afterPath="$PROJECT_DIR$/project.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/Style.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/Style.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java" afterPath="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/create_fragment.xml" afterPath="$PROJECT_DIR$/res/layout/create_fragment.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="sodamixer.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362890759509" ignored="false" />
+    <file path="/Dummy.txt" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362956023716" ignored="false" />
     <file path="/green_button_selector.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362267463216" ignored="false" />
     <file path="/red_button_selector.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362267475383" ignored="false" />
     <file path="/soda_dialog.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362887050723" ignored="false" />
@@ -56,20 +60,21 @@
     <file path="/Soda.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362276393710" ignored="false" />
     <file path="/SodaBase.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362697302478" ignored="false" />
     <file path="/SodaFlavor.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362703310304" ignored="false" />
-    <file path="/Style.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362276939166" ignored="false" />
-    <file path="/CreateFragment.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362888775298" ignored="false" />
+    <file path="/Style.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362927657841" ignored="false" />
+    <file path="/CreateFragment.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362956095920" ignored="false" />
     <file path="/MainActivity.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362896004812" ignored="false" />
     <file path="/SodaBaseTable.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362701682075" ignored="false" />
-    <file path="/SQLiteHelper.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362886699450" ignored="false" />
+    <file path="/SQLiteHelper.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362927617194" ignored="false" />
     <file path="/strings.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362351297201" ignored="false" />
     <file path="/SodaFlavorTable.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362703081752" ignored="false" />
     <file path="/SodaFlavorAdapter.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362705704600" ignored="false" />
     <file path="/soda_flavor_spinner_view.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362886995423" ignored="false" />
-    <file path="/create_fragment.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362361902845" ignored="false" />
+    <file path="/create_fragment.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362926810756" ignored="false" />
     <file path="/BaseFlavorTable.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362612377971" ignored="false" />
-    <file path="/a.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362799843709" ignored="false" />
+    <file path="/a.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362926336470" ignored="false" />
     <file path="/sample.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362799878552" ignored="false" />
     <file path="/launch_activity.xml" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362895925443" ignored="false" />
+    <file path="/StyleTable.java" changelist="ba45b498-80ff-44f7-851b-10b21676efb6" time="1362927361378" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -133,22 +138,66 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="MainActivity.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="MainActivity.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="39" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.8258575">
+            <state line="62" column="8" selection-start="2460" selection-end="2460" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#831#841#0" expanded="true" />
+                <element signature="e#787#797#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="launch_activity.xml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/launch_activity.xml">
+      <file leaf-file-name="CreateFragment.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="14" selection-start="460" selection-end="460" vertical-scroll-proportion="-6.0">
+            <state line="100" column="55" selection-start="3121" selection-end="3121" vertical-scroll-proportion="0.38265306">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StyleTable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="24" column="0" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SQLiteHelper.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="606" column="34" selection-start="25687" selection-end="25687" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2659#2669#0" expanded="true" />
+                <element signature="e#2903#2913#0" expanded="true" />
+                <element signature="e#4153#4165#0" expanded="true" />
+                <element signature="e#4409#4421#0" expanded="true" />
+                <element signature="e#5610#5622#0" expanded="true" />
+                <element signature="e#25520#25527#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Style.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/Style.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="5" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="create_fragment.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/create_fragment.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="83" column="44" selection-start="3506" selection-end="3506" vertical-scroll-proportion="-12.72">
               <folding />
             </state>
           </provider>
@@ -175,22 +224,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/Mix.java" />
-        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/BaseFlavorTable.java" />
-        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/SodaBase.java" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaFlavorTable.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/SodaFlavor.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/adapter/SodaBaseAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/adapter/SodaFlavorAdapter.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseTable.java" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseFlavorTable.java" />
-        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java" />
         <option value="$PROJECT_DIR$/res/layout/soda_flavor_spinner_view.xml" />
         <option value="$PROJECT_DIR$/res/layout/soda_dialog.xml" />
-        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java" />
         <option value="$PROJECT_DIR$/res/layout/launch_activity.xml" />
         <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java" />
+        <option value="$PROJECT_DIR$/res/layout/create_fragment.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/Style.java" />
+        <option value="$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java" />
       </list>
     </option>
   </component>
@@ -268,6 +317,72 @@
               <option name="myItemId" value="sodamixer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helper" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragment" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sodamixer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -305,24 +420,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sodamixer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sodamixer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -339,7 +436,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="recentsLimit" value="5" />
-    <property name="options.lastSelected" value="preferences.sourceCode.Java" />
+    <property name="options.lastSelected" value="preferences.keymap" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$USER_HOME$/android-sdks/extras/android/support/v4/android-support-v4.jar!/" />
     <property name="AndroidLayoutSelectedEditor" value="text-editor" />
@@ -554,7 +651,15 @@
       <created>1362890811657</created>
       <updated>1362890811657</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Moved from ActionBarTabs to ViewPager and TitleBarPager indicator thingy">
+      <created>1362896071275</created>
+      <updated>1362896071275</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Quick Fix">
+      <created>1362896209951</created>
+      <updated>1362896209951</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -649,7 +754,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Increased icon size to 96 dp, fixed database names, fixed database calls for getting flavor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Quick Fix" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -665,6 +770,8 @@
     <MESSAGE value="Added most icons, still missing Dasani, Seagram, and Water, also non-coke freestyle such as Pepsi products..." />
     <MESSAGE value="Updated Tables to use real values, Bases and Flavors in Database onCreate. Create Page 80% done" />
     <MESSAGE value="Increased icon size to 96 dp, fixed database names, fixed database calls for getting flavor" />
+    <MESSAGE value="Moved from ActionBarTabs to ViewPager and TitleBarPager indicator thingy" />
+    <MESSAGE value="Quick Fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -674,44 +781,9 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="0" selection-start="581" selection-end="581" vertical-scroll-proportion="0.2264151">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaFlavorTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="39" selection-start="2271" selection-end="2271" vertical-scroll-proportion="0.7250859">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/SodaBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="111" selection-end="111" vertical-scroll-proportion="0.09163803">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/SodaFlavor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="583" selection-end="583" vertical-scroll-proportion="0.6597938">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/adapter/SodaBaseAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="57" column="27" selection-start="1732" selection-end="1732" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseTable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="41" selection-start="2965" selection-end="2965" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -737,7 +809,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="23" column="54" selection-start="741" selection-end="741" vertical-scroll-proportion="0.57885903">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -752,46 +824,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/create_fragment.xml">
-      <provider editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="2292" selection-end="2292" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#3710#4360#0" expanded="true" />
-            <element signature="e#4341#4342#0" expanded="true" />
-            <element signature="e#4423#4744#0" expanded="true" />
-            <element signature="e#4725#4726#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseFlavorTable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="11" column="54" selection-start="397" selection-end="397" vertical-scroll-proportion="0.0">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="194" column="28" selection-start="5939" selection-end="5939" vertical-scroll-proportion="0.69468266">
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2712#2722#0" expanded="true" />
-            <element signature="e#2956#2966#0" expanded="true" />
-            <element signature="e#4206#4218#0" expanded="true" />
-            <element signature="e#4462#4474#0" expanded="true" />
-            <element signature="e#5663#5675#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -805,13 +841,80 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java">
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/MixStyleTable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="39" selection-start="1222" selection-end="1222" vertical-scroll-proportion="0.8258575">
+        <state line="5" column="13" selection-start="151" selection-end="151" vertical-scroll-proportion="0.12583892">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/SodaBaseTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="5" selection-start="1206" selection-end="1206" vertical-scroll-proportion="0.25167784">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="0" selection-start="581" selection-end="581" vertical-scroll-proportion="0.30874786">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/create_fragment.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="83" column="44" selection-start="3506" selection-end="3506" vertical-scroll-proportion="-12.72">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/database/StyleTable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="712" selection-end="712" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/model/Style.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="5" selection-start="445" selection-end="445" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/helper/SQLiteHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="606" column="34" selection-start="25687" selection-end="25687" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#831#841#0" expanded="true" />
+            <element signature="e#2659#2669#0" expanded="true" />
+            <element signature="e#2903#2913#0" expanded="true" />
+            <element signature="e#4153#4165#0" expanded="true" />
+            <element signature="e#4409#4421#0" expanded="true" />
+            <element signature="e#5610#5622#0" expanded="true" />
+            <element signature="e#25520#25527#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/activity/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="62" column="8" selection-start="2460" selection-end="2460" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#787#797#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/hjkatz/sodamixer/fragment/CreateFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="100" column="55" selection-start="3121" selection-end="3121" vertical-scroll-proportion="0.38265306">
+          <folding />
         </state>
       </provider>
     </entry>
