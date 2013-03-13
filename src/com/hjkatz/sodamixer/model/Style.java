@@ -4,7 +4,7 @@ package com.hjkatz.sodamixer.model;
 public class Style
 {
     private Integer id;
-    private String nameFormatted;
+    private String  nameFormatted;
 
     public void Style()
     {
@@ -30,5 +30,25 @@ public class Style
     public void setId( Integer id )
     {
         this.id = id;
+    }
+
+    @Override
+    public boolean equals( Object obj )
+    {
+        if ( obj == null )
+        {
+            return false;
+        }
+        if ( obj == this )
+        {
+            return true;
+        }
+        if ( !( obj instanceof Style ) )
+        {
+            return false;
+        }
+
+        Style o = (Style) obj;
+        return o.getId().equals( this.getId() );
     }
 }

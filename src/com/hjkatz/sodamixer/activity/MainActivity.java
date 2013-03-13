@@ -1,10 +1,10 @@
 package com.hjkatz.sodamixer.activity;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.ViewPager;
 import android.util.Log;
 import android.view.View;
@@ -12,19 +12,18 @@ import com.actionbarsherlock.app.SherlockFragmentActivity;
 import com.hjkatz.sodamixer.R;
 import com.hjkatz.sodamixer.fragment.CreateFragment;
 import com.hjkatz.sodamixer.fragment.MixesFragment;
-import com.viewpagerindicator.*;
-
+import com.viewpagerindicator.TitlePageIndicator;
 import java.util.ArrayList;
 
 /** Created by User: Harrison Katz on Date: 1/9/13 */
 public class MainActivity extends SherlockFragmentActivity
 {
 
-    private static ArrayList<Fragment> fragments = new ArrayList<Fragment>();
-    private static MixesFragment mixesFragment = new MixesFragment();
-    private static CreateFragment createFragment = new CreateFragment();
-    private static MixesFragment mixes2Fragment = new MixesFragment();
-    private static MixesFragment mixes3Fragment = new MixesFragment();
+    private static ArrayList<Fragment> fragments      = new ArrayList<Fragment>();
+    private static MixesFragment       mixesFragment  = new MixesFragment();
+    private static CreateFragment      createFragment = new CreateFragment();
+    private static MixesFragment       mixes2Fragment = new MixesFragment();
+    private static MixesFragment       mixes3Fragment = new MixesFragment();
 
     static
     {
@@ -40,12 +39,9 @@ public class MainActivity extends SherlockFragmentActivity
         super.onCreate( savedInstanceState );
         this.setContentView( R.layout.launch_activity );
 
-        Log.i( "SodaMixer",
-                "/¯¯¯¯¯/ ' /¯¯¯¯¯\\ |¯¯¯¯\\°'     /¯¯¯¯¯|          |¯¯¯\\/¯¯¯|    O    \\¯¯|¯¯/  /¯x¯¯\\ |¯¯¯¯\\ " );
-        Log.i( "SodaMixer",
-                "\\ __¯¯¯\\' |     x    |'|  x     \\   /     !     |          |            '| |¯¯¯¯|   >  < °'|   (\\__/||   x  <|'" );
-        Log.i( "SodaMixer",
-                "/______/| \\_____/ |_____/ /___/¯|__'|          |.__|\\/|__.| |____| /__|__\\  \\____\\ |__|\\__\\" );
+        Log.i( "SodaMixer", "/¯¯¯¯¯/ ' /¯¯¯¯¯\\ |¯¯¯¯\\°'     /¯¯¯¯¯|          |¯¯¯\\/¯¯¯|    O    \\¯¯|¯¯/  /¯x¯¯\\ |¯¯¯¯\\ " );
+        Log.i( "SodaMixer", "\\ __¯¯¯\\' |     x    |'|  x     \\   /     !     |          |            '| |¯¯¯¯|   >  < °'|   (\\__/||   x  <|'" );
+        Log.i( "SodaMixer", "/______/| \\_____/ |_____/ /___/¯|__'|          |.__|\\/|__.| |____| /__|__\\  \\____\\ |__|\\__\\" );
 
         MainPagerAdapter fragmentPagerAdapter = new MainPagerAdapter( getSupportFragmentManager() );
         fragmentPagerAdapter.setFragments( fragments );
@@ -54,6 +50,8 @@ public class MainActivity extends SherlockFragmentActivity
         viewPager.setAdapter( fragmentPagerAdapter );
 
         com.viewpagerindicator.TitlePageIndicator indicator = (TitlePageIndicator) findViewById( R.id.indicator );
+        indicator.setTextColor( Color.GRAY );
+        indicator.setSelectedColor( Color.BLACK );
         indicator.setViewPager( viewPager );
 
     }
@@ -73,11 +71,25 @@ public class MainActivity extends SherlockFragmentActivity
         createFragment.addSodaDialog( v );
     }
 
+    public void createMix( View v )
+    {
+        createFragment.createMix( v );
+    }
+
+    public void selectStyles( View v )
+    {
+        createFragment.selectStyles( v );
+    }
+
+    public void clearUI( View v )
+    {
+        createFragment.clearUI( v );
+    }
+
     private class MainPagerAdapter extends FragmentPagerAdapter
     {
-        ArrayList<Fragment> mFragments;
-
         private final String[] titles = { "Mixes", "Create", "Mixes2", "Mixes3" };
+        ArrayList<Fragment> mFragments;
 
         public MainPagerAdapter( FragmentManager fm )
         {

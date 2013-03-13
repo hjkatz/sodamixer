@@ -4,10 +4,11 @@
     <string name="app_title">Soda Mixer</string>
     <string name="name">Name:</string>
     <string name="example">Example</string>
-    <string name="style">Style:</string>
+    <string name="styles">Styles:</string>
     <string name="description">Description:</string>
     <string name="create_mix_description_hint">my crazy awesome drink!</string>
     <string name="create_mix_name_hint">my drink</string>
     <string name="add_a_flavor">Add a Flavor!</string>
     <string name="choose_a_base">Choose a Base!</string>
+    <string name="select_style">click to select styles</string>
 </resources>

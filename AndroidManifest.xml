@@ -8,7 +8,7 @@
 
     <application android:icon="@drawable/sodapopbottle"
                  android:label="@string/app_title"
-                 android:theme="@style/Theme.Sherlock">
+                 android:theme="@style/Theme.Sherlock.Light">
         <activity android:name=".activity.MainActivity"
                   android:screenOrientation="portrait">
             <intent-filter>

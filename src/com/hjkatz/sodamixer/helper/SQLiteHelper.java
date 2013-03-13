@@ -614,8 +614,8 @@ public class SQLiteHelper extends SQLiteOpenHelper
                 do
                 {
                     Style style = new Style();
-                    style.setId( cursor.getInt( cursor.getColumnIndex( SodaFlavorTable.PK ) ) );
-                    style.setNameFormatted( cursor.getString( cursor.getColumnIndex( SodaFlavorTable.NAME_FORMATTED ) ) );
+                    style.setId( cursor.getInt( cursor.getColumnIndex( StyleTable.PK ) ) );
+                    style.setNameFormatted( cursor.getString( cursor.getColumnIndex( StyleTable.NAME_FORMATTED ) ) );
                     styles.add( style );
                 } while ( cursor.moveToNext() );
             }

@@ -4,24 +4,25 @@ import android.content.Context;
 import android.database.DataSetObserver;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
 import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import com.hjkatz.sodamixer.R;
 import com.hjkatz.sodamixer.model.SodaFlavor;
 import java.util.ArrayList;
-import java.util.List;
 
 /** Created By: harrison on Date: 3/2/13 */
-public class SodaFlavorAdapter implements SpinnerAdapter
+public class SodaFlavorAdapter extends ArrayAdapter implements SpinnerAdapter
 {
 
     private ArrayList<SodaFlavor> sodaFlavors;
     private Context               context;
 
-    public SodaFlavorAdapter( Context context, int textViewResourceId, List objects )
+    public SodaFlavorAdapter( Context context, int textViewResourceId, ArrayList<SodaFlavor> objects )
     {
+        super( context, textViewResourceId );
         this.context = context;
-        sodaFlavors = (ArrayList<SodaFlavor>) objects;
+        sodaFlavors = objects;
     }
 
     @Override
